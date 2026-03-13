@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-widthinitial-scale=1">
+    <title>Program - VINCI 2023</title>
+    <meta name="keywords"
+        content="International Symposium on Visual Information Communication and Interaction, VINCI 2023">
+    <meta name="description" content="VINCI 2023">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name" content="vinci-website">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="assets/apple-touch-icon-1024x1024.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="vinci-website">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="assets/apple-touch-startup-image-640x1136.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="assets/apple-touch-startup-image-750x1334.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="assets/apple-touch-startup-image-828x1792.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        href="assets/apple-touch-startup-image-1125x2436.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        href="assets/apple-touch-startup-image-1242x2208.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        href="assets/apple-touch-startup-image-1242x2688.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="assets/apple-touch-startup-image-1536x2048.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="assets/apple-touch-startup-image-1668x2224.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="assets/apple-touch-startup-image-1668x2388.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="assets/apple-touch-startup-image-2048x2732.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        href="assets/apple-touch-startup-image-1620x2160.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="assets/apple-touch-startup-image-1136x640.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="assets/apple-touch-startup-image-1334x750.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="assets/apple-touch-startup-image-1792x828.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        href="assets/apple-touch-startup-image-2436x1125.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        href="assets/apple-touch-startup-image-2208x1242.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        href="assets/apple-touch-startup-image-2688x1242.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="assets/apple-touch-startup-image-2048x1536.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="assets/apple-touch-startup-image-2224x1668.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="assets/apple-touch-startup-image-2388x1668.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="assets/apple-touch-startup-image-2732x2048.png">
+    <link rel="apple-touch-startup-image"
+        media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        href="assets/apple-touch-startup-image-2160x1620.png">
+    <link rel="icon" type="image/png" sizes="228x228" href="assets/coast-228x228.png">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="assets/mstile-144x144.png">
+    <meta name="msapplication-config" content="assets/browserconfig.xml">
+    <link rel="yandex-tableau-widget" href="assets/yandex-browser-manifest.json">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container" id="header">
+        <div class="row justify-content-center mt-4">
+            <div class="col-custom"><img class="brand-logo" src="vinci-logo_d571.svg">
+                <div class="carousel slide carousel-fade" id="carousel" data-bs-ride="carousel">
+                    <div class="carousel-inner" data-bs-interval="8000">
+                        <div class="carousel-item active"><img class="d-block w-100" src="header-guangzhou4_4eda.jpeg"
+                                alt="chur"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="header-guangzhou3_9e0e.jpeg"
+                                alt="fhgr-flags"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="header-guangzhou2_1f35.png"
+                                alt="htw-chur"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="header-guangzhou_01a0.jpeg"
+                                alt="htw-chur"></div>
+                    </div>
+                </div>
+                <p class="title"><a href="index.html"> The 16<sup>th</sup> International Symposium on Visual Information
+                        Communication and Interaction (VINCI 2023)</a></p>
+                <p class="sub-title">Guangzhou, China, 22-24 September 2023</p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-custom">
+                <ul class="nav navbar">
+                    <!-- li.nav-item.navbar-brand.mx-0--><!--  a(href = '/').nav-link #[img(src = require('../img/vinci-logo-sm.svg') alt = 'vinci-logo')]-->
+                    <li class="nav-item d-none d-xl-block"><a class="nav-link" href="index.html">Overview</a></li>
+                    <li class="nav-item d-none d-xl-block"><a class="nav-link" href="submissions.html">Submissions</a>
+                    </li>
+                    <li class="nav-item d-none d-xl-block"><a class="nav-link" href="registration.html">Registration</a>
+                    </li>
+                    <li class="nav-item d-none d-xl-block">
+                        <div class="active"></div><a class="nav-link disabled" href="program.html">Program</a>
+                    </li>
+                    <li class="nav-item d-none d-xl-block"><a class="nav-link" href="keynotes.html">Keynotes</a></li>
+                    <li class="nav-item d-none d-xl-block"><a class="nav-link" href="panel.html">Panel</a></li>
+                    <li class="nav-item d-none d-xl-block"><a class="nav-link"
+                            href="https://artgallery.vinci-symp.org/">Exhibition</a></li>
+                    <li class="nav-item d-none d-xl-block"><a class="nav-link" href="venue.html">For Attendees</a></li>
+                    <li class="nav-item d-none d-xl-block"><a class="nav-link" href="committees.html">Committees</a>
+                    </li>
+                    <li class="nav-item dropdown d-xl-none navbar-light"><a class="nav-link dropdown-toggle"
+                            data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span
+                                class="navbar-toggler-icon me-2"></span> Navigation </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Overview</a></li>
+                            <li><a class="dropdown-item" href="submissions.html">Submissions</a></li>
+                            <li><a class="dropdown-item" href="registration.html">Registration</a></li>
+                            <li>
+                                <div class="active"></div><a class="dropdown-item disabled"
+                                    href="program.html">Program</a>
+                            </li>
+                            <li><a class="dropdown-item" href="keynotes.html">Keynotes</a></li>
+                            <li><a class="dropdown-item" href="panel.html">Panel</a></li>
+                            <li><a class="dropdown-item" href="https://artgallery.vinci-symp.org/">Exhibition</a></li>
+                            <li><a class="dropdown-item" href="venue.html">For Attendees</a></li>
+                            <li><a class="dropdown-item" href="committees.html">Committees</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container d-block d-sm-none" id="header">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-sm mt-3">
+                <p><strong><a class="text-body" href="index.html">The 16<sup>th</sup> International Symposium on Visual
+                            Information Communication and Interaction (VINCI 2023)</a></strong></p>
+                <p class="text-end">Guangzhou, China, 22-24 September 2023</p>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-custom col-padding">
+                <h2 class="w-auto clearfix"><img class="img-responsive me-2 float-start" src="vinci-logo-sm_f5df.svg"
+                        alt="h2-logo"><span class="me-4 float-start">Program</span>
+                    <hr class="w-auto">
+                </h2>
+                <p> </p>
+                <ul class="list">
+                    <li class="list-item">All times are given in China (UTC+8).</li>
+                    <li class="list-item">Keynote/Tech. S1 S2 S3 S4 S6 - Lecture Hall C.</li>
+                    <li class="list-item">Art S1 S2 S3/Tech. S5 S7 - E1-101.</li>
+                    <li class="list-item">Exhibition tour/Panel - CMA Lab (E2, 3rd Floor).</li>
+                </ul>
+                <test>
+                    <div class="col-lg-10 col-11 mt-4">
+                        <table class="table table-sm text-end table-borderless align-middle table-hover">
+                            <thead>
+                                <tr class="text-center text-muted">
+                                    <th class="border-end border-dark" scope="col"></th>
+                                    <th class="border border-bottom-0 border-dark" scope="col" colspan="1">Time</th>
+                                    <th class="border border-bottom-0 border-dark" scope="col" colspan="1"><a
+                                            href="program.html#day01" style="color: black;">Friday 22</a></th>
+                                    <th class="border border-bottom-0 border-dark" scope="col" colspan="2"><a
+                                            href="program.html#day02" style="color: black;">Saturday 23</a></th>
+                                    <th class="border border-bottom-0 border-dark" scope="col" colspan="2"><a
+                                            href="program.html#day03" style="color: black;">Sunday 24</a></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center border-bottom border-dark">
+                                    <td class="border-end border-dark border" scope="row" rowspan="4">Morning </td>
+                                    <td class="border-end pe-4 border-dark border">8:30 </td>
+                                    <td class="border-end pe-4 border-dark border" rowspan="7">Reception</td>
+                                    <td class="border-end pe-4 border-dark border" colspan="2">Opening</td>
+                                    <td class="border-end pe-4 border-dark border" colspan="2"></td>
+                                </tr>
+                                <tr class="text-center border-bottom border-dark">
+                                    <td class="border-end pe-4 border-dark border">9:00 </td>
+                                    <td class="border-end pe-4 border-dark border" colspan="2"
+                                        style="background-color: #AFDAF2;"><a href="program.html#k1"
+                                            style="color: black;">Keynote 1</a></td>
+                                    <td class="border-end pe-4 border-dark border" colspan="2"
+                                        style="background-color: #AFDAF2;"><a href="program.html#k3"
+                                            style="color: black;">Keynote 3</a></td>
+                                </tr>
+                                <tr class="text-center border-bottom border-dark">
+                                    <td class="border-end pe-4 border-dark border">10:00 </td>
+                                    <td class="border-end pe-4 border-dark border" colspan="4">Coffee Break</td>
+                                </tr>
+                                <tr class="text-center border-bottom border-dark">
+                                    <td class="border-end pe-4 border-dark border">10:20 </td>
+                                    <td class="border-end pe-4 border-dark border" colspan="1"
+                                        style="background-color: #FCE4D6"><a href="program.html#t1"
+                                            style="color: black;">Tech. S1</a></td>
+                                    <td class="border-end pe-4 border-dark border" colspan="1"
+                                        style="background-color: #DFDDED"><a href="program.html#a1"
+                                            style="color: black;">Art S1</a></td>
+                                    <td class="border-end pe-4 border-dark border" colspan="1"
+                                        style="background-color: #FCE4D6"><a href="program.html#t3"
+                                            style="color: black;">Tech. S3</a></td>
+                                    <td class="border-end pe-4 border-dark border" colspan="1"
+                                        style="background-color: #DFDDED"><a href="program.html#a3"
+                                            style="color: black;">Art S3</a></td>
+                                </tr>
+                                <tr class="text-center border-bottom border-dark">
+                                    <td class="border-end border-dark border" scope="row" rowspan="1">Midday </td>
+                                    <td class="border-end pe-4 border-dark border">11:50 </td>
+                                    <td class="border-end pe-4 border-dark border" colspan="4">Lunch</td>
+                                </tr>
+                                <tr class="text-center border-bottom border-dark">
+                                    <td class="border-end border-dark border" scope="row" rowspan="4">Afternoon </td>
+                                    <td class="border-end pe-4 border-dark border">13:30 </td>
+                                    <td class="border-end pe-4 border-dark border" colspan="2"
+                                        style="background-color: #AFDAF2;"><a href="program.html#k2"
+                                            style="color: black;">Keynote 2</a></td>
+                                    <td class="border-end pe-4 border-dark border" colspan="1"
+                                        style="background-color: #FCE4D6"><a href="program.html#t4"
+                                            style="color: black;">Tech. S4</a></td>
+                                    <td class="border-end pe-4 border-dark border" colspan="1"
+                                        style="background-color: #FCE4D6"><a href="program.html#t5"
+                                            style="color: black;">Tech. S5</a></td>
+                                </tr>
+                                <tr class="text-center border-bottom border-dark">
+                                    <td class="border-end pe-4 border-dark border">14:30 </td>
+                                    <td class="border-end pe-4 border-dark border" colspan="4">Coffee Break</td>
+                                </tr>
+                                <tr class="text-center border-bottom border-dark">
+                                    <td class="border-end pe-4 border-dark border">14:50 </td>
+                                    <td class="border-end pe-4 border-dark border" rowspan="2">Panel</td>
+                                    <td class="border-end pe-4 border-dark border" colspan="1"
+                                        style="background-color: #FCE4D6"><a href="program.html#t2"
+                                            style="color: black;">Tech. S2</a></td>
+                                    <td class="border-end pe-4 border-dark border" colspan="1"
+                                        style="background-color: #DFDDED"><a href="program.html#a2"
+                                            style="color: black;">Art S2</a></td>
+                                    <td class="border-end pe-4 border-dark border" colspan="1"
+                                        style="background-color: #FCE4D6"><a href="program.html#t6"
+                                            style="color: black;">Tech. S6</a></td>
+                                    <td class="border-end pe-4 border-dark border" colspan="1"
+                                        style="background-color: #FCE4D6"><a href="program.html#t7"
+                                            style="color: black;">Tech. S7</a></td>
+                                </tr>
+                                <tr class="text-center border-bottom border-dark">
+                                    <td class="border-end pe-4 border-dark border">16:20 </td>
+                                    <td class="border-end pe-4 border-dark border" colspan="2">Exhibition tour</td>
+                                    <td class="border-end pe-4 border-dark border" colspan="2">Closing</td>
+                                </tr>
+                                <tr class="text-center border-bottom border-dark">
+                                    <td class="border-end border-dark border" scope="row" rowspan="4">Evening </td>
+                                    <td class="border-end pe-4 border-dark border">18:30 </td>
+                                    <td class="border-end pe-4 border-dark border" rowspan="1"></td>
+                                    <td class="border-end pe-4 border-dark border" colspan="2">Banquet</td>
+                                    <td class="border-end pe-4 border-dark border" colspan="2"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </test>
+                <table class="table table-borderless align-top table-program">
+                    <thead>
+                        <tr class="border-bottom border-dark">
+                            <th scope="col" colspan="1">
+                                <div class="fw-light">Time</div>
+                            </th>
+                            <th scope="col" colspan="1"><a name="day01">Friday / September 22, 2023 / Day One</a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-muted">
+                            <td rowspan="1">8:30-16:50</td>
+                            <td>Reception</td>
+                        </tr>
+                        <tr class="text-muted">
+                            <td rowspan="1">15:00-17:00</td>
+                            <td>Panel</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-borderless align-top table-program">
+                    <thead>
+                        <tr class="border-bottom border-dark">
+                            <th scope="col" colspan="1">
+                                <div class="fw-light">Time</div>
+                            </th>
+                            <th scope="col" colspan="1"><a name="day02">Saturday / September 23, 2023 / Day Two</a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:30-9:00</td>
+                            <td><strong>Opening of VINCI 2023</strong></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #AFDAF2">
+                            <td rowspan="2"><a name="k1">09:00-10:00</a></td>
+                            <td class="d-flex"><strong>Keynote Talk 1</strong><small class="ms-auto">Lecture Hall
+                                    C</small></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #AFDAF2">
+                            <td> <span
+                                    style="background:#AFDAF2; padding: 3px; border-radius: 5px; margin-right: 5px;">KN</span><span>Visual
+                                    Communication: Tools, Domain Motivation, and Citizen Responsibility
+                                    <br></span><small>Prof. Dr. Baoquan Chen</small></td>
+                        </tr>
+                        <tr class="text-muted">
+                            <td>10:00-10:20</td>
+                            <td>Coffee Break</td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td rowspan="2"><a name="t1">10:20-11:50</a></td>
+                            <td><span class="d-flex"><strong>Tech. Paper Session 1: Visual Communication</strong><small
+                                        class="ms-auto">Lecture Hall C</small></span><small class="ms-auto">Session
+                                    Chair: Lingyun Yu</small></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td>
+                                <ul class="px-0">
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>The Landscape of Visual Information Communication and Interaction
+                                            Research </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t1.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Gonzalo Gabriel Méndez,
+                                            Oscar Moreno and Patricio Mendoza</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Storytelling in Frozen Frontier: Exploring Graphic-Based Approach
+                                            for Creating Interactive Story Maps in Antarctica </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t2.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Liangwei Wang, Zhan Wang,
+                                            Xi Zhao and Wei Zeng</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>EmotionVis: Affective Visualization with Physical Devices
+                                        </span><span> <a href="https://www.vinci-symp.org/vinci_paper/vinci2023-t3.pdf">
+                                                <img src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Xinyi Huang, Yu Liu and
+                                            Lingyun Yu</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>FitYou: A Personalized Dashboard for Health Data </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t4.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Michael Burch, Alexander
+                                            van Schie, Giada Zacheo, Amina Buzimkic, Andreas la Roi and Yves
+                                            Staudt</small></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #DFDDED;">
+                            <td rowspan="2"><a name="a1">10:20-11:50</a></td>
+                            <td><span class="d-flex"><strong>Art Paper Session 1: Cultural Heritage and Soft
+                                        Datafication</strong><small class="ms-auto">E1-101</small></span><small
+                                    class="ms-auto">Session Chair: Rual Masu</small></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #DFDDED">
+                            <td>
+                                <ul class="px-0">
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Naturality: A Natural Reflection of Chinese Calligraphy
+                                        </span><span> <a href="https://www.vinci-symp.org/vinci_paper/vinci2023-a1.pdf">
+                                                <img src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Bingyuan Wang, Kang Zhang
+                                            and Zeyu Wang</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>A Study of the Fractal Design of Decorative Patterns in Chaoshan
+                                            Drawnwork: An Illustration of the Julia Set </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-a2.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Jiajun Chen and Ya
+                                            Zhang</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>Calligraphy to Image </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-a3.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Haichuan Lin</small></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="text-muted">
+                            <td>11:50-13:30</td>
+                            <td>Lunch Break</td>
+                        </tr>
+                        <tr style="border-left: 7px solid #AFDAF2">
+                            <td rowspan="2"><a name="k2">13:30-14:30</a></td>
+                            <td class="d-flex"><strong>Keynote Talk 2</strong><small class="ms-auto">Lecture Hall
+                                    C</small></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #AFDAF2">
+                            <td> <span
+                                    style="background:#AFDAF2; padding: 3px; border-radius: 5px; margin-right: 5px;">KN</span><span>AI
+                                    for Good: using a social humanoid robot to improve quality of life
+                                </span><br><small>Prof. Dr. Nadia Magnenat Thalmann</small></td>
+                        </tr>
+                        <tr class="text-muted">
+                            <td>14:30-14:50</td>
+                            <td>Coffee Break</td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td rowspan="2"><a name="t2">14:50-16:20</a></td>
+                            <td><span class="d-flex"><strong>Tech. Paper Session 2: Visual Analytics</strong><small
+                                        class="ms-auto">Lecture Hall C</small></span><small class="ms-auto">Session
+                                    Chair: Chongke Bi</small></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td>
+                                <ul class="px-0">
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Visual Analysis of Air Pollutant Propagation Path and Pollution
+                                            Source </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t5.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Yan Hao, Chongke Bi, Lu
+                                            Yang, Xiaobin Qiu, Yunlong Li and Ce Yu</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>Does Where You are Matter? A Visual Analytics System for COVID-19
+                                            Transmission Based on Social Hierarchical Perspective </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t6.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Jianing Hao, Xibin Jiang,
+                                            Qing Shi and Wei Zeng</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>A Visual Analytic System for Ranking Multi-attribute Data Using
+                                            Multi-level Pareto Frontier </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t7.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Sihan Pan and Jun
+                                            Tao</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>Metaphor Design of Dockless Bike-sharing Based on Spatio-temporal
+                                            Geographic Data </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t8.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Kelin Li, Hong Yin, Dong
+                                            Li, Kang Zhang and Changbo Wang</small></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #DFDDED;">
+                            <td rowspan="2"><a name="a2">14:50-16:20</a></td>
+                            <td><span class="d-flex"><strong>Art Paper Session 2: Art Museums and Audience
+                                        Interaction</strong><small class="ms-auto">E1-101</small></span><small
+                                    class="ms-auto">Session Chair: Varvara Guljajeva</small></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #DFDDED">
+                            <td>
+                                <ul class="px-0">
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Visual exploration of color usage in Vincent van Gogh’s Paintings
+                                        </span><span> <a href="https://www.vinci-symp.org/vinci_paper/vinci2023-a4.pdf">
+                                                <img src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Xinyi Ding, Yejuan Xie,
+                                            Jielin Jing, Fei Du and Chengtao Ji</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Quantifying Collection Lag in European Modern and Contemporary Art
+                                            Museums </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-a5.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Mar Canet Sola, Antonina
+                                            Korepanova, Ksenia Mukhina and Maximilian Schich</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>The Viewer as a Source of the Artwork </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-a6.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Raivo Kelomees</small>
+                                    </li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>MOONMENT: Designing Gesture-based Interaction with Acousto-Optic
+                                            Feedbacks </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-a7.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Jiayi Yao and Liang
+                                            Tan</small></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="text-muted">
+                            <td>16:20-16:50</td>
+                            <td class="d-flex">Exhibition tour<small class="ms-auto">CMA Lab (E2, 3rd Floor)</small>
+                            </td>
+                        </tr>
+                        <tr class="text-muted">
+                            <td>Evening</td>
+                            <td>Banquet</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-borderless align-top table-program">
+                    <thead>
+                        <tr class="border-bottom border-dark">
+                            <th scope="col" colspan="1">
+                                <div class="fw-light">Time</div>
+                            </th>
+                            <th scope="col" colspan="1"><a name="day03">Sunday / September 24, 2023 / Day Three</a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #AFDAF2">
+                            <td rowspan="2"><a name="k3">09:00-10:00</a></td>
+                            <td> <span class="d-flex"><strong>Keynote Talk 3</strong><small class="ms-auto">Lecture Hall
+                                        C</small></span></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #AFDAF2">
+                            <td> <span
+                                    style="background:#AFDAF2; padding: 3px; border-radius: 5px; margin-right: 5px;">KN</span><span>Transdisciplinary
+                                    experiences in Data Visualization and beyond <br></span><small>Prof. Dr. Doris
+                                    Kosminsky</small></td>
+                        </tr>
+                        <tr class="text-muted">
+                            <td>10:00-10:20</td>
+                            <td>Coffee Break</td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td rowspan="2"><a name="t3">10:20-11:50</a></td>
+                            <td><span class="d-flex"><strong>Tech. Paper Session 3: Perception and Design</strong><small
+                                        class="ms-auto">Lecture Hall C</small></span><small class="ms-auto">Session
+                                    Chair: Rongrong Chen</small></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td>
+                                <ul class="px-0">
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Kandinsky’s Color-Shape Associations in Chinese Context: Do
+                                            Personality and Affect Matter? </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t9.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Zixu Gong, Kang Zhang and
+                                            Rongrong Chen</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Individual Visual Working Memory Capacity Affects Aesthetic
+                                            Appreciation of Chinese Ink Painting </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t10.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Dingning Long, Rongrong
+                                            Chen</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>An Interactive System Design Based on Biofeedback and Breathing
+                                            Exercise </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t11.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Xueying Wen and Liang
+                                            Tan</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>Visual Analytics of the Effect of Age on the Spatial Learning
+                                            Capabilities of Sleep-Deprived Drosophila </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t12.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Kevin Zhao, Dina
+                                            Ellsworth and Craig Queenan</small></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #DFDDED">
+                            <td rowspan="2"><a name="a3">10:20-11:50</a></td>
+                            <td><span class="d-flex"><strong>Art Paper Session 3: Extended Cinema</strong><small
+                                        class="ms-auto">E1-101</small></span><small class="ms-auto">Session Chair: Zeyu
+                                    Wang</small></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #DFDDED">
+                            <td>
+                                <ul class="px-0">
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Urban Symphony: An AI and Data-Driven Approach to Real-Time
+                                            Animation for Public Digital Art </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-a8.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Rungu Lin, Yongen Ke and
+                                            Kang Zhang</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Simonstown: An AI-facilitated Interactive Story of Love, Life, and
+                                            Pandemic </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-a9.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Bingyuan Wang, Pinxi Zhu,
+                                            Hao Li, David Kei-Man Yip and Zeyu Wang</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>Anticipating 2020s: Deep Learning Methods for Generating Videos
+                                            from Found Footage Toward a Database Aesthetic </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-a10.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Amalia Foka</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>From Expanded Cinema to Extended Reality: How AI Can Expand and
+                                            Extend Cinematic Experiences </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-a11.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Junrong Song, Bingyuan
+                                            Wang, Zeyu Wang and David Kei-Man Yip</small></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="text-muted">
+                            <td>11:50-13:30</td>
+                            <td>Lunch Break</td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td rowspan="2"><a name="t4">13:30-14:30</a></td>
+                            <td><span class="d-flex"><strong>Tech. Paper Session 4: Extended Reality</strong><small
+                                        class="ms-auto">Lecture Hall C</small></span><small>Session Chair: Qian
+                                    Zhu</small></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td>
+                                <ul class="px-0">
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Development of an immersive simulator for improving student
+                                            chemistry learning efficiency </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t13.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Shan Jin, Yuyang Wang,
+                                            Lik-Hang Lee, Xinyi Luo and Pan Hui</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>PMM: A Smart Shopping Guider Based on Mobile AR </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t14.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Jiahao Han, Zhifei Ding,
+                                            Yuxuan Chen, Lingxin Yu, Siru Chen and Richen Liu</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Work vs. Leisure – Differences in Avatar Characteristics Depending
+                                            on Social Situations </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t15.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Natalie Hube, Melissa
+                                            Reinelt, Kresimir Vidackovic and Michael Sedlmair</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>LOOP Meditation: Enhancing Novice's VR Meditation Experience with
+                                            Physical Movement </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t16.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Shihan Fu, Liangliang
+                                            Qiang and Wei Zeng</small></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td rowspan="2"><a name="t5">13:30-14:30</a></td>
+                            <td><span class="d-flex"><strong>Tech. Paper Session 5: Finance</strong><small
+                                        class="ms-auto">E1-101</small></span><small class="ms-auto">Session Chair:
+                                    Chenhui Li</small></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td>
+                                <ul class="px-0">
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>NFTeller: Dual-centric Visual Analytics for Assessing Market
+                                            Performance of NFT Collectibles </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t17.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Yifan Cao, Meng Xia,
+                                            Kento Shigyo, Furui Cheng, Qianhang Yu, Xingxing Yang, Wei Zeng, Yang Wang
+                                            and Huamin Qu</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Visual Analytics for Phishing Scam Identification in Blockchain
+                                            Transactions with Multiple Model Comparison </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t18.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Jiaqi Dong, Zishu Qin,
+                                            Zhou Fang, Xuan Chen, Zengfeng Huang, Haoyun Guo, Richen Liu, Cagatay Turkay
+                                            and Siming Chen</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>BiverWordle: Visualizing Stock Market Sentiment with Financial Text
+                                            Data and Trends </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t19.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Lei Xia, Yi-Ping Gao, Le
+                                            Lin, Yu-Xi Chen and Kang Zhang</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>Explore, Compare, and Predict Investment Opportunities through
+                                            What-If Analysis: US Housing Market Investigation </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t20.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Hongruyu Chen, Fernando
+                                            Gonzalez, Oto Mraz, Sophia Kuhn, Cristina Guzman and Mennatallah
+                                            El-Assady</small></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="text-muted">
+                            <td>14:30-14:50</td>
+                            <td>Coffee Break</td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td rowspan="2"><a name="t6">14:50-16:20</a></td>
+                            <td><span class="d-flex"><strong>Tech. Paper Session 6: Aesthetics and Art</strong><small
+                                        class="ms-auto">Lecture Hall C</small></span><small>Session Chair: Bin
+                                    Jiang</small></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td>
+                                <ul class="px-0">
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Interplay between Spatial Ability and Visual Complexity in the
+                                            Aesthetic Appreciation of Landscape Paintings </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t21.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Kunlin Jin, Rongrong
+                                            Chen</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>OdorV-Art: An Initial Exploration of An Olfactory Intervention for
+                                            Appreciating Style Information of Artworks in Virtual Museum </span><span>
+                                            <a href="https://www.vinci-symp.org/vinci_paper/vinci2023-t22.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Shumeng Zhang, Ziyan
+                                            Wang, You Zhou, Hao Cui, Shihan Fu, Zeyu Wang and Mingming Fan</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>The Rich, the Poor, and the Ugly: An Aesthetic-Perspective
+                                            Assessment of NFT Values </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t23.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Yihan Chen, Yilin Ye and
+                                            Wei Zeng</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>Collection Space Navigator: An Interactive Visualization Interface
+                                            for Multidimensional Datasets </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t24.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Tillmann Ohm, Mar Canet
+                                            Sola, Andres Karjus and Maximilian Schich</small></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td rowspan="2"><a name="t7">14:50-16:20</a></td>
+                            <td> <span class="d-flex"><strong>Tech. Paper Session 7: Machine Learning and
+                                        Visualization</strong><small class="ms-auto">E1-101</small></span><small
+                                    class="ms-auto">Session Chair: Jie Li</small></td>
+                        </tr>
+                        <tr style="border-left: 7px solid #FCE4D6">
+                            <td>
+                                <ul class="px-0">
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Visual Analysis of Scene-Graph-Based Visual Question Answering
+                                        </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t25.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Noel Schäfer, Sebastian
+                                            Künzel, Tanja Munz-Körner, Pascal Tilli, Sandeep Vidyapu, Ngoc Thang Vu and
+                                            Daniel Weiskopf</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Graph-based Latent Space Traversal for New Molecules Discovery
+                                        </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t26.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Yang Zhang, Jie Li and
+                                            Chao Xu</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                        </span><span>Enhancing Visual Understanding by Removing Dithering with Global
+                                            and Self-Conditioned Transformation </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t27.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Yifei Huang, Chenhui Li,
+                                            Risheng Liu, Tianyi Liang and Changbo Wang</small></li>
+                                    <li class="pb-1"> <span
+                                            style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP
+                                        </span><span>Visual Analysis of DDPG Models by Exploring the Space of Experience
+                                        </span><span> <a
+                                                href="https://www.vinci-symp.org/vinci_paper/vinci2023-t28.pdf"> <img
+                                                    src="file-pdf_c66a.png"
+                                                    style="height: 20px"></a></span><br><small>Huixue Wang, Yunzhe Wang,
+                                            You Lu, Qiming Fu and Jianping Chen</small></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="text-muted">
+                            <td>16:20-16:50</td>
+                            <td>Closing and VINCI 2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-custom col-padding">
+                <h2 class="w-auto clearfix"><img class="img-responsive me-2 float-start" src="vinci-logo-sm_f5df.svg"
+                        alt="h2-logo"><span class="me-4 float-start">Presentation Times</span>
+                    <hr class="w-auto">
+                </h2>
+                <p>The following presentation times apply to the different paper types:</p>
+                <div class="col-lg-10 col-11 mt-4">
+                    <table class="table table-sm table-borderless align-middle table-hover">
+                        <thead>
+                            <tr class="text-end">
+                                <th scope="col"> </th>
+                                <th scope="col">Presentation Time</th>
+                                <th scope="col">Questions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-bottom border-muted">
+                                <td> <span
+                                        style="background:#FFF6CC; padding: 3px; border-radius: 5px; margin-right: 5px;">FP
+                                    </span><span>/ Full Paper</span></td>
+                                <td class="text-end">20 Minutes </td>
+                                <td class="text-end"> 5 Minutes</td>
+                            </tr>
+                            <tr class="border-bottom border-muted">
+                                <td> <span
+                                        style="background:#C8EA9B; padding: 3px; border-radius: 5px; margin-right: 5px;">SP</span><span>/
+                                        Short Paper</span></td>
+                                <td class="text-end">15 Minutes </td>
+                                <td class="text-end"> 5 Minutes</td>
+                            </tr>
+                            <tr class="border-muted">
+                                <td> <span
+                                        style="background:#AFDAF2; padding: 3px; border-radius: 5px; margin-right: 5px;">KN</span><span>/
+                                        Keynote</span></td>
+                                <td class="text-end">45 Minutes</td>
+                                <td class="text-end">15 Minutes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="footer">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-5 col-lg-2">
+                <p class="mb-3 clearfix"><a href="https://www.acm.org/publications/icps-series"><img class="logo"
+                            src="acm_icps_v2b_alpha_sm_410d.png"></a></p>
+                <p class="mb-5"><small>Published by ACM International Conference Proceedings Series</small></p>
+            </div>
+            <div class="col-6 col-md-5 col-lg-3">
+                <p class="mb-3 clearfix"><a href="https://hkust-gz.edu.cn/"><img class="logo"
+                            src="hkust-logo-sm3_592e.png"></a></p>
+                <p class="mb-5"><small>Sponsored by The Hong Kong University of Science and Technology
+                        (Guangzhou).</small></p>
+            </div>
+            <div class="col-6 col-md-5 col-lg-3">
+                <p class="mb-3 clearfix"><a href="https://cma.hkust-gz.edu.cn/"><img class="logo"
+                            src="cma-logo-sm_e08e.png"></a></p>
+                <p class="mb-5"><small>Organized by the Computational Media and Arts Thrust, Information Hub</small></p>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center"><small>Copyright &copy; 2023 VINCI</small></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
