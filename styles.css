@@ -10407,3 +10407,46 @@ tr.table-emph {
     display: block;
     margin: 0 auto;
 }
+/* 1. 让导航文字“呼吸”起来 */
+.custom-nav-link {
+    color: white !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    
+    /* --- 核心修改：增加字间距 --- */
+    letter-spacing: 1.5px; 
+    
+    /* --- 核心修改：增加按钮之间的左右间距 --- */
+    padding-left: 25px !important; 
+    padding-right: 25px !important;
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease; /* 增加平滑过渡 */
+}
+/* 2. 核心修改：当前页面文字变浅灰色，并显示黄色倒三角 */
+.active-page {
+    color: #A9A9A9 !important; /* 使用 DarkGray 或 LightGray (#D3D3D3) */
+    cursor: default; /* 既然是当前页，鼠标悬停显示普通箭头 */
+}
+/* 2. 黄色倒三角的间距也微调一下 */
+.active-page::after {
+    content: '';
+    display: inline-block;
+    margin-left: 12px; /* 增加文字和三角的距离 */
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #FFD700;
+}
+/* 3. 针对小屏幕的微调，防止太宽溢出 */
+@media (max-width: 1400px) {
+    .custom-nav-link {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        letter-spacing: 1px;
+    }
+}
