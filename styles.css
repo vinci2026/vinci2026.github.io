@@ -10289,11 +10289,34 @@ span.navbar-toggler-icon {
 .dropdown-menu .dropdown-item {
     background: #fff;
     border-left: 4px #74c2c8 solid;
-    padding-left: 1rem
+    padding-left: 1rem;
+    color: #a9a9a9
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #e9ecef
+    background-color: #e9ecef;
+    color: #6f6f6f
+}
+
+.dropdown-menu-dark .dropdown-item {
+    color: #a9a9a9
+}
+
+.dropdown-menu-dark .dropdown-item:hover,
+.dropdown-menu-dark .dropdown-item:focus {
+    color: #6f6f6f
+}
+
+.dropdown-menu .dropdown-item.active-page,
+.dropdown-menu-dark .dropdown-item.active-page {
+    color: #233b3d !important
+}
+
+.dropdown-menu .dropdown-item.active-page:hover,
+.dropdown-menu .dropdown-item.active-page:focus,
+.dropdown-menu-dark .dropdown-item.active-page:hover,
+.dropdown-menu-dark .dropdown-item.active-page:focus {
+    color: #1b2e30 !important
 }
 
 .col-padding h3,
