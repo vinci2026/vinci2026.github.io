@@ -10473,3 +10473,35 @@ tr.table-emph {
         letter-spacing: 1px;
     }
 }
+/* 1. 基础容器设置 */
+.custom-hover-dropdown {
+    position: relative;
+}
+
+/* 2. 核心逻辑：悬停时显示下拉菜单 */
+@media (min-width: 1200px) {
+    .custom-hover-dropdown:hover .custom-dark-menu {
+        display: block !important;
+        margin-top: 0; /* 确保无缝连接 */
+    }
+}
+
+/* 不要只写在 :hover 里，直接写在类名下 */
+.custom-dark-menu {
+    background-color: #000000 !important; /* 强制初始状态就是黑色 */
+    border: none;
+    padding: 0;
+    display: none; /* 初始隐藏，由 JS 或 hover 触发显示 */
+}
+
+/* 这里的文字样式也要直接定义 */
+.custom-dark-menu .dropdown-item {
+    color: #ffffff !important;      /* 初始就是白色 */
+    font-weight: bold !important;    /* 初始就是加粗 */
+    background-color: transparent;   /* 背景不要跟随父级变灰 */
+}
+
+/* 只有当鼠标真的悬停在“选项”上时，才给一点深灰色反馈 */
+.custom-dark-menu .dropdown-item:hover {
+    background-color: #333333 !important; 
+}
