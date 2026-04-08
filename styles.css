@@ -10309,14 +10309,28 @@ span.navbar-toggler-icon {
 
 .dropdown-menu .dropdown-item.active-page,
 .dropdown-menu-dark .dropdown-item.active-page {
-    color: #233b3d !important
+    color: #f4d35e !important
 }
 
 .dropdown-menu .dropdown-item.active-page:hover,
 .dropdown-menu .dropdown-item.active-page:focus,
 .dropdown-menu-dark .dropdown-item.active-page:hover,
 .dropdown-menu-dark .dropdown-item.active-page:focus {
-    color: #1b2e30 !important
+    color: #ffe08a !important
+}
+
+.dropdown-menu .mobile-nav-section,
+.dropdown-menu-dark .mobile-nav-section {
+    color: #d6d6d6 !important;
+    font-weight: 700 !important;
+    cursor: default;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.dropdown-menu .mobile-nav-child,
+.dropdown-menu-dark .mobile-nav-child {
+    padding-left: 2.25rem;
 }
 
 .col-padding h3,
@@ -10456,14 +10470,7 @@ tr.table-emph {
 }
 /* 2. 黄色倒三角的间距也微调一下 */
 .active-page::after {
-    content: '';
-    display: inline-block;
-    margin-left: 12px; /* 增加文字和三角的距离 */
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 7px solid #FFD700;
+    content: none;
 }
 /* 3. 针对小屏幕的微调，防止太宽溢出 */
 @media (max-width: 1400px) {
