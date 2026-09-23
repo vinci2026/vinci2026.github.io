@@ -10333,6 +10333,18 @@ span.navbar-toggler-icon {
     padding-left: 2.25rem;
 }
 
+@media(max-width: 1199.98px) {
+    .nav-item.d-xl-none>.dropdown-menu {
+        right: 0;
+        left: auto;
+        max-width: calc(100vw - 1.5rem);
+    }
+
+    .nav-item.d-xl-none>.dropdown-menu .dropdown-item {
+        white-space: normal;
+    }
+}
+
 .col-padding h3,
 .col-padding .h3,
 .col-padding p,
@@ -10490,6 +10502,11 @@ tr.table-emph {
     .custom-hover-dropdown:hover .custom-dark-menu {
         display: block !important;
         margin-top: 0; /* 确保无缝连接 */
+    }
+
+    .custom-hover-dropdown>.dropdown-menu-end {
+        right: 0;
+        left: auto;
     }
 }
 
