@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Schedule - VINCI 2026</title>
+    <meta name="keywords" content="International Symposium on Visual Information Communication and Interaction, VINCI 2026">
+    <meta name="description" content="Conference schedule and paper sessions for VINCI 2026">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <link href="styles.css" rel="stylesheet">
+<style>
+.schedule-content { max-width:1100px; padding:2rem 1rem 3rem; }
+.schedule-content h1 { font-size:2rem; font-weight:700; border-bottom:2px solid #00008b; padding-bottom:1rem; }
+.schedule-intro { margin:1rem 0 1.5rem; color:#4b5563; }
+.schedule-days { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:2rem; }
+.schedule-days a { border:1px solid #beced0; padding:.45rem .8rem; color:#1e555a; text-decoration:none; }
+.schedule-days a:hover, .schedule-days a:focus { background:#e8f1f2; }
+.schedule-day { margin:2rem 0 3rem; scroll-margin-top:1rem; }
+.schedule-day h2, .schedule-content > h2 { font-size:1.5rem; color:#1e555a; margin-bottom:1rem; }
+.schedule-grid { border-top:2px solid #1e555a; }
+.schedule-entry { display:grid; grid-template-columns:140px minmax(0,1fr) 180px; gap:1rem; align-items:start; border-bottom:1px solid #dce5e6; padding:.85rem .5rem; }
+.schedule-entry:nth-child(even) { background:#f7faf9; }
+.schedule-entry time { font-weight:700; white-space:nowrap; }
+.schedule-entry strong { display:block; line-height:1.45; }
+.schedule-chair, .schedule-venue { display:block; color:#526267; font-size:.92rem; margin-top:.25rem; }
+.schedule-venue { margin-top:0; }
+.papers-day { margin-top:2rem; }
+.papers-day h3 { font-size:1.25rem; color:#1e555a; border-bottom:1px solid #bbcdd0; padding-bottom:.5rem; }
+.papers-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; }
+.paper-session { padding:.5rem 0 1rem; min-width:0; }
+.paper-session-meta { color:#1e555a; font-weight:700; margin-bottom:.3rem; }
+.paper-session h4 { font-size:1.1rem; font-weight:700; margin-bottom:.8rem; }
+.paper-session ul { padding-left:1.2rem; }
+.paper-session li { padding:.35rem 0; overflow-wrap:anywhere; }
+.paper-authors { display:block; color:#596368; font-size:.9rem; }
+.paper-type { color:#1e555a; font-size:.8rem; text-transform:uppercase; white-space:nowrap; }
+@media(max-width:767.98px) { .schedule-entry { grid-template-columns:100px minmax(0,1fr); gap:.4rem .8rem; } .schedule-venue { grid-column:2; } .papers-grid { grid-template-columns:1fr; gap:0; } }
+@media(max-width:420px) { .schedule-entry { grid-template-columns:1fr; } .schedule-venue { grid-column:1; } }
+</style>
+</head>
+
+<body>
+    <section class="container-fluid" style="background-color: black; padding: 10px 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="VINCI" style="height: 40px; width: auto;">
+                    </a>
+                </div>
+
+                <div class="col">
+                    <ul class="nav navbar justify-content-end">
+                        <li class="nav-item d-none d-xl-block">
+                            <a class="nav-link custom-nav-link" href="index.html">Overview</a>
+                        </li>
+                        <li class="nav-item d-none d-xl-block dropdown custom-hover-dropdown">
+                            <a class="nav-link custom-nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                Submissions
+                            </a>
+                            <ul class="dropdown-menu custom-dark-menu">
+                                <li><a class="dropdown-item" href="submissions.html">General Information</a></li>
+                                <li><a class="dropdown-item" href="technical.html">Technical Papers</a></li>
+                                <li><a class="dropdown-item" href="art.html">Art Paper, Art Gallery &amp; Media Gallery Tracks</a></li>
+                                <li><a class="dropdown-item" href="cultural.html">Cultural Computing Special Track</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-none d-xl-block">
+                            <a class="nav-link custom-nav-link" href="keynotes.html">Keynotes</a>
+                        </li>
+                        <li class="nav-item d-none d-xl-block">
+                            <a class="nav-link custom-nav-link" href="schedule.html">Schedule</a>
+                        </li>
+                        <li class="nav-item d-none d-xl-block">
+                            <a class="nav-link custom-nav-link active-page" href="schedule.html">Schedule</a>
+                        </li>
+                        <li class="nav-item d-none d-xl-block">
+                            <a class="nav-link custom-nav-link" href="registration.html">Registration</a>
+                        </li>
+                        <li class="nav-item d-none d-xl-block">
+                            <a class="nav-link custom-nav-link" href="committees.html">Committees</a>
+                        </li>
+                        <li class="nav-item d-none d-xl-block dropdown custom-hover-dropdown">
+                            <a class="nav-link custom-nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                Venue
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end custom-dark-menu">
+                                <li><a class="dropdown-item" href="ooeli.html">OōEli (Art and Media Gallery Track)</a></li>
+                                <li><a class="dropdown-item" href="conference-venue.html">Conference Venue &amp; Accommodation</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown d-xl-none navbar-dark">
+                            <a class="nav-link dropdown-toggle custom-nav-link" data-bs-toggle="dropdown" href="#" role="button">
+                                <span class="navbar-toggler-icon me-2"></span> Navigation
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="index.html">Overview</a></li>
+                                <li><span class="dropdown-item mobile-nav-section">Submissions</span></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="submissions.html">General Information</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="technical.html">Technical Papers</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="art.html">Art Paper, Art Gallery &amp; Media Gallery Tracks</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="cultural.html">Cultural Computing Special Track</a></li>
+                                <li><a class="dropdown-item" href="keynotes.html">Keynotes</a></li>
+                                <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
+                                <li><a class="dropdown-item active-page" href="schedule.html">Schedule</a></li>
+                                <li><a class="dropdown-item" href="registration.html">Registration</a></li>
+                                <li><a class="dropdown-item" href="committees.html">Committees</a></li>
+                                <li><span class="dropdown-item mobile-nav-section">Venue</span></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="ooeli.html">OōEli (Art and Media Gallery Track)</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="conference-venue.html">Conference Venue &amp; Accommodation</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="header">
+        <div class="row justify-content-center mt-4">
+            <div class="col-custom" style="text-align: center;">
+                <img src="img/VINCI.jpg" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin-bottom: 20px;" alt="VINCI 2026">
+            </div>
+        </div>
+    </section>
+    <section class="container d-block d-sm-none" id="header">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-sm mt-3">
+                <p><strong><a class="text-body" href="index.html">The 19<sup>th</sup> International Symposium on Visual
+                            Information Communication and Interaction (VINCI 2026)</a></strong></p>
+                <p class="text-end">Hangzhou, China, 1-4 November 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="container schedule-content">
+        <h1>Schedule</h1>
+        <p class="schedule-intro">VINCI 2026 · Hangzhou, China · 1–4 November 2026. This program is subject to change.</p>
+        <nav class="schedule-days" aria-label="Schedule dates">
+            <a href="#nov-1">1 Nov · Sunday</a><a href="#nov-2">2 Nov · Monday</a>
+            <a href="#nov-3">3 Nov · Tuesday</a><a href="#nov-4">4 Nov · Wednesday</a>
+            <a href="#paper-sessions">Paper sessions</a>
+        </nav>
+<section class="schedule-day" id="nov-1"><h2>Sunday, 1 November</h2><div class="schedule-grid">
+<div class="schedule-entry"><time>08:30–17:00</time><div><strong>Registration Opens</strong></div><span class="schedule-venue">Chengbei Wenlan Hotel lobby</span></div>
+</div></section>
+<section class="schedule-day" id="nov-2"><h2>Monday, 2 November</h2><div class="schedule-grid">
+<div class="schedule-entry"><time>08:30–09:00</time><div><strong>Registration Opens</strong></div><span class="schedule-venue">Chengbei Wenlan Hotel lobby</span></div>
+<div class="schedule-entry"><time>09:00–09:30</time><div><strong>Conference Opening</strong><span class="schedule-chair">Chair: Wei Zhang Hangzhou City University</span><span class="schedule-chair">Welcome remarks: Yun Chen (Hangzhou City University). VINCI overview: Yuxin Ma (Southern University of Science and Technology). Paper-track overview: Yuxin Ma, Piwen Xu, Xiaojuan Chen and Wei Zeng.</span></div><span class="schedule-venue">Wenjin Hall</span></div>
+<div class="schedule-entry"><time>09:30–10:30</time><div><strong>Opening Keynote: Beyond Generation: Supporting Human Creativity and Learning with AI — Hongbo Fu</strong><span class="schedule-chair">Chair: James She The Hong Kong University of Science and Technology (Guangzhou)</span></div><span class="schedule-venue">Wenjin Hall</span></div>
+<div class="schedule-entry"><time>10:30–10:50</time><div><strong>Coffee Break</strong></div><span class="schedule-venue">Outside Wenjin Hall</span></div>
+<div class="schedule-entry"><time>10:50–11:50</time><div><strong>Keynote 2: Living Archives: From Digital Preservation to Artistic Reinterpretation — Juergen Hagler</strong><span class="schedule-chair">Chair: James She The Hong Kong University of Science and Technology (Guangzhou)</span></div><span class="schedule-venue">Wenjin Hall</span></div>
+<div class="schedule-entry"><time>12:30–13:30</time><div><strong>Lunch</strong></div><span class="schedule-venue">Hotel restaurant</span></div>
+<div class="schedule-entry"><time>14:00–15:50</time><div><strong>Art Paper 1 Embodied Interactive Art</strong><span class="schedule-chair">Chair: Zi-Wi WU, Hong Kong University of Science and Technology</span></div><span class="schedule-venue">Wenjin Hall A</span></div>
+<div class="schedule-entry"><time>14:00–15:50</time><div><strong>Cultural Computing 1 Cultural Visualization and Memory</strong><span class="schedule-chair">Chair: Wei Ren Hangzhou City University</span></div><span class="schedule-venue">Wenjin Hall B</span></div>
+<div class="schedule-entry"><time>15:50–16:10</time><div><strong>Coffee Break</strong></div><span class="schedule-venue">Outside the meeting halls</span></div>
+<div class="schedule-entry"><time>16:10–18:00</time><div><strong>Technical Paper 1: Visual Analytics and Evaluation</strong><span class="schedule-chair">Chair: Chaoqing Xu Hangzhou City University</span></div><span class="schedule-venue">Wenjin Hall A</span></div>
+<div class="schedule-entry"><time>16:10–18:00</time><div><strong>Cultural Computing 2: Cultural Reconstruction and Creation</strong><span class="schedule-chair">Chair: Tan Tang Zhejiang University</span></div><span class="schedule-venue">Wenjin Hall B</span></div>
+<div class="schedule-entry"><time>18:30–20:00</time><div><strong>Reception</strong></div><span class="schedule-venue">Hotel restaurant</span></div>
+</div></section>
+<section class="schedule-day" id="nov-3"><h2>Tuesday, 3 November</h2><div class="schedule-grid">
+<div class="schedule-entry"><time>08:30–09:00</time><div><strong>Registration Opens</strong></div><span class="schedule-venue">Chengbei Wenlan Hotel lobby</span></div>
+<div class="schedule-entry"><time>09:00–10:20</time><div><strong>Technical Paper 2: Visual Generation and Storytelling</strong><span class="schedule-chair">Chair: Yuxin Ma, Southern University of Science and Technology</span></div><span class="schedule-venue">Wenjin Hall A</span></div>
+<div class="schedule-entry"><time>09:00–10:20</time><div><strong>Cultural Computing 3: Immersive Cultural Experiences</strong><span class="schedule-chair">Chair: Wei Zeng, HKUST (Guangzhou)</span></div><span class="schedule-venue">Wenjin Hall B</span></div>
+<div class="schedule-entry"><time>10:20–10:40</time><div><strong>Coffee Break</strong></div><span class="schedule-venue">Outside the meeting halls</span></div>
+<div class="schedule-entry"><time>10:40–12:00</time><div><strong>Technical Paper 3: Embodied and Visual Interaction</strong><span class="schedule-chair">Chair: Yuxin Ma, Southern University of Science and Technology</span></div><span class="schedule-venue">Wenjin Hall A</span></div>
+<div class="schedule-entry"><time>10:40–12:00</time><div><strong>Art Paper 2: Heritage and Memory</strong><span class="schedule-chair">Chair: Tongzhou Yu, China Academy of Art</span></div><span class="schedule-venue">Wenjin Hall B</span></div>
+<div class="schedule-entry"><time>12:30–13:30</time><div><strong>Lunch</strong></div><span class="schedule-venue">Hotel restaurant</span></div>
+<div class="schedule-entry"><time>14:00–14:20</time><div><strong>Transfer to OōEli Tianmuli</strong></div><span class="schedule-venue">Hotel entrance</span></div>
+<div class="schedule-entry"><time>14:20–17:30</time><div><strong>Art and Media Gallery</strong></div><span class="schedule-venue">OōEli Tianmuli</span></div>
+<div class="schedule-entry"><time>18:30–20:00</time><div><strong>Conference Dinner and Performance</strong></div><span class="schedule-venue">Wenlan</span></div>
+</div></section>
+<section class="schedule-day" id="nov-4"><h2>Wednesday, 4 November</h2><div class="schedule-grid">
+<div class="schedule-entry"><time>08:30–09:00</time><div><strong>Registration Opens</strong></div><span class="schedule-venue">Chengbei Wenlan Hotel lobby</span></div>
+<div class="schedule-entry"><time>09:00–10:20</time><div><strong>Art Paper 3: AI Cinema and Performance</strong><span class="schedule-chair">Chair: Claire QI, China Academy of Art</span></div><span class="schedule-venue">Wenjin Hall A</span></div>
+<div class="schedule-entry"><time>10:20–10:40</time><div><strong>Coffee Break</strong></div><span class="schedule-venue">Outside the meeting halls</span></div>
+<div class="schedule-entry"><time>10:40–12:00</time><div><strong>Art Paper 4: Algorithmic Aesthetics</strong><span class="schedule-chair">Chair: Yin BING , China Academy of Art</span></div><span class="schedule-venue">Wenjin Hall A</span></div>
+<div class="schedule-entry"><time>12:30–13:30</time><div><strong>Lunch</strong></div><span class="schedule-venue">Hotel restaurant</span></div>
+<div class="schedule-entry"><time>14:00–15:00</time><div><strong>Keynote 3: Explorations on Novel Natural Human-Computer Interaction Techniques — Feng Tian</strong><span class="schedule-chair">Chair: Piwen Xu, HKUST (Guangzhou)</span></div><span class="schedule-venue">Wenjin Hall</span></div>
+<div class="schedule-entry"><time>15:00–15:20</time><div><strong>Coffee Break</strong></div><span class="schedule-venue">Outside Wenjin Hall</span></div>
+<div class="schedule-entry"><time>15:20–16:20</time><div><strong>Leonardo @ VINCI Panel Discussion</strong></div><span class="schedule-venue"></span></div>
+<div class="schedule-entry"><time>16:20–16:25</time><div><strong>Awards Ceremony</strong></div><span class="schedule-venue">Wenjin Hall</span></div>
+<div class="schedule-entry"><time>16:25–16:35</time><div><strong>Next VINCI Host Introduction — Tony Huang</strong></div><span class="schedule-venue">Wenjin Hall</span></div>
+<div class="schedule-entry"><time>16:35–17:00</time><div><strong>Closing Remarks — James She</strong></div><span class="schedule-venue">Wenjin Hall</span></div>
+</div></section>
+        <h2 id="paper-sessions">Paper Sessions</h2>
+        <p>Full papers: 13 minutes. Short papers and posters: 8 minutes. All durations include Q&amp;A.</p>
+<section class="paper-session">
+<p class="paper-session-meta">14:00–15:50 | Wenjin Hall A | Art Paper</p>
+<h4>A1 Embodied Interactive Art</h4><ul>
+<li><strong>CosmoSonic: Resonating with the Void - A Multimodal Embodied Interaction System Based on Real-Time Cosmological Data Mapping</strong> <span class="paper-type">full</span><span class="paper-authors">hu, xinyang; tan, qianxi; Ji, tianyang; Wang, ziyi</span></li>
+<li><strong>Riding the Clock: Designing an Interactive Installation with a Sound-Based Narrative to Facilitate Empathy for Food Delivery Riders’ Everyday Challenges</strong> <span class="paper-type">full</span><span class="paper-authors">LI, Heyue; HU, Yufei; ZHU, Lisha; ZHANG, Wanlin</span></li>
+<li><strong>Entangled Ballet: A Data-Driven Choreography of Embodied Entanglement</strong> <span class="paper-type">full</span><span class="paper-authors">Wenjing, Mao; zhang, shumeng; Lin, Han; wu, ziyang; Hui, Pan</span></li>
+<li><strong>Turning the Market: Feng Shui, Financial Data, and Unstable Control in HUM DOOM</strong> <span class="paper-type">short</span><span class="paper-authors">Zhou, Ziling</span></li>
+<li><strong>&quot;Breathing with the Tide&quot; -- Handcrafted Textiles, Oceanic Respiration, and the Ritual of Healing</strong> <span class="paper-type">short</span><span class="paper-authors">Sun, Qianyi; JIANG, Yuyang; WU, Lei; Song, Wei</span></li>
+<li><strong>Sediments of the Machine Age: AI Fossil</strong> <span class="paper-type">poster</span><span class="paper-authors">Wu, Ziyang; Meng, Shengyu</span></li>
+</ul></section>
+<section class="paper-session">
+<p class="paper-session-meta">14:00–15:50 | Wenjin Hall B | Cultural Computing</p>
+<h4>C1 Cultural Visualization and Memory</h4><ul>
+<li><strong>Translation Workflow and Traceability in Visual Design for Cultural Heritage: A Case Study of Shanshui Yingji and Ni Xiaodu</strong> <span class="paper-type">full</span><span class="paper-authors">Wang, Chenan; Zhu, Binning</span></li>
+<li><strong>MotifTrails: Citation-Anchored Visual Analysis and Scholarly Narration for Cross-Cultural Migration Hypotheses of Decorative Motifs</strong> <span class="paper-type">full</span><span class="paper-authors">TAO, LINCHEN; huang, zhongjie</span></li>
+<li><strong>Archive-M: Visual Analytics of Visual Modernity in China Machine Federation Journal Advertising Archives</strong> <span class="paper-type">full</span><span class="paper-authors">Ye, Lin; You, Yue; Li, Kelin; Mao, Xi</span></li>
+<li><strong>SealScope: Visual Analytics of Small Seal Script</strong> <span class="paper-type">full</span><span class="paper-authors">Xie, Liyi; Su, Zhewei; Zhang, Yu; Peng, Yujia; Tong, Xin; Zhang, Kang</span></li>
+<li><strong>JDVis: An Evidence-Traceable Framework for the Visual Translation of Jiandu Transcriptions</strong> <span class="paper-type">full</span><span class="paper-authors">Ye, Ziduo; Xu, Jiahao; Li, Jinjuan; Zhang, Zhan</span></li>
+<li><strong>From Traces to Narrative Visualization:A Cross-Media Framework for Urban Cultural Heritage</strong> <span class="paper-type">short</span><span class="paper-authors">Yu, Hanyang; Li, Anda; Han, Yuge</span></li>
+<li><strong>Walking Back Together: Everyday Mobile VR Capture and Shared Spatial Memory-Making</strong> <span class="paper-type">short</span><span class="paper-authors">Liu, Yujie; Yip, David</span></li>
+<li><strong>From Que-Tower Procession to Stereoscopic 360° VR: Viewpoint Translation and Depth-Layered Construction of a Historical Urban Scene</strong> <span class="paper-type">poster</span><span class="paper-authors">Qian, Yiyi; Huang, Zirui; Zhang, Kebo; Tang, Angela Chulei; Yu, Zhen; Bing, Yin</span></li>
+</ul></section>
+<section class="paper-session">
+<p class="paper-session-meta">16:10–18:00 | Wenjin Hall A | Technical</p>
+<h4>T1 Visual Analytics and Evaluation</h4><ul>
+<li><strong>Quantitative Evaluation of Comparative Visualization Methods for Change Identification in Multi-Temporal Point Clouds</strong> <span class="paper-type">full</span><span class="paper-authors">Wegen, Ole; Heidisch, Lukas; Scheibel, Willy; Richter, Rico; Barz-Cech, Tim; Döllner, Jürgen</span></li>
+<li><strong>TrackletViz: Visual Analytics for Tracklets of Security-Camera Footage</strong> <span class="paper-type">full</span><span class="paper-authors">Wattasseril, Jobin Idiculla; Scheibel, Willy; Döllner, Jürgen</span></li>
+<li><strong>Visual Analysis of Multi-Objective Parametric Architectural Design</strong> <span class="paper-type">full</span><span class="paper-authors">Ngo, Quynh; Grund, Sebastian; Abdelaal, Moataz; Zorn, Max; Kurzhals, Kuno; Wortmann, Thomas; Weiskopf, Daniel; Sedlmair, Michael</span></li>
+<li><strong>Visualization of Machine Learning Models through Their Spatial and Temporal Listeners</strong> <span class="paper-type">full</span><span class="paper-authors">Wu, Siyu; Shi, Lei; Xia, Lei; Wu, Cenyang; Liu, Zipeng; Feng, Yingchaojie; Zhou, Liang; Chen, Wei</span></li>
+<li><strong>Toward Diagrammatic Modal Reasoning: Exploring the Boundaries of Modal Euler Diagrams</strong> <span class="paper-type">short</span><span class="paper-authors">Sato, Yuri; Kawamitsu, Hazuki</span></li>
+<li><strong>HarmonAI: A Visual Interface for AI-assisted Music Harmonization</strong> <span class="paper-type">short</span><span class="paper-authors">Rau, Simeon; Brachtel, Benedikt; Sedlmair, Michael</span></li>
+<li><strong>What is Effective: A Contextual Evaluation of Interaction and Visual Design in Data Visualization</strong> <span class="paper-type">short</span><span class="paper-authors">Lu, Nannan; Zhang, Jing; Li, Ruohan; Li, Ke-Lin</span></li>
+<li><strong>ST-Refinery: Interactive Comparison and Local Refinement of Clustering Results in Spatial Transcriptomics</strong> <span class="paper-type">short</span><span class="paper-authors">Fu, Hongxin; Feng, Junning; Lou, Yi; Li, Wei; Zhang, Yanlin</span></li>
+<li><strong>Cross-Reality Physicalization for Urban Design Exploration</strong> <span class="paper-type">short</span><span class="paper-authors">Öney, Seyda; Papadimitraki, Maria; Geringer, Sergej; Bocksch, Yannik; Bohn, Florian; Rohwer, Jakob; Menges, Achim; Kurzhals, Kuno; Weiskopf, Daniel</span></li>
+</ul></section>
+<section class="paper-session">
+<p class="paper-session-meta">16:10–18:00 | Wenjin Hall B | Cultural Computing</p>
+<h4>C2 Cultural Reconstruction and Creation</h4><ul>
+<li><strong>ArtifactReborn: Visualizing Cultural Features in Anthropomorphic Design</strong> <span class="paper-type">full</span><span class="paper-authors">Xu, Ningning; Zhao, Yuer; Zhang, Zhichao; Liu, Yu; Li, Kaiwen; Yu, Lingyun</span></li>
+<li><strong>Archive-to-Figure: A Framework for Generating Culturally Authentic Historical Figures from Archives</strong> <span class="paper-type">full</span><span class="paper-authors">SHE, JAMES; LI, YANYI</span></li>
+<li><strong>Communicating Restoration in Cultural Heritage Inpainting: A Two-Track Visual Evaluation Framework</strong> <span class="paper-type">full</span><span class="paper-authors">Al-Madhehagi, Mohammed; Sun, Zengguo; Chang, Jumei; Wu, Xiaojun</span></li>
+<li><strong>What the Listener Keeps: An Autoethnography Comparing a Documenter&#x27;s Memory, AI-Generated Imaginings, and Photographs of Others&#x27; Cherished Objects</strong> <span class="paper-type">full</span><span class="paper-authors">Ozawa, Chinatsu; Ochiai, Yoichi; Takeda, Masaki</span></li>
+<li><strong>Visual Cultural Encoding: An Intermediate Representation for Traceable Human–AI Co-Creation in Cultural Learning</strong> <span class="paper-type">full</span><span class="paper-authors">Xiao, Luran</span></li>
+<li><strong>Provenance-Aware AIGC Storyboarding for Fragmented Mural Heritage: A Kizil Cave Musician Case Study</strong> <span class="paper-type">short</span><span class="paper-authors">LI, YIFAN; RUAN, HANMO</span></li>
+<li><strong>Visualizing Enterprise Identity: A Cross-Cultural Governance Framework for AI-Mediated Brand Storytelling</strong> <span class="paper-type">short</span><span class="paper-authors">Cui, Wei; He, Hanfu; Chang, Yin; Chen, Litao; Chen, Guo; Huang, Xiaojun; Gao, Ze</span></li>
+<li><strong>ShanShui Image Resonance</strong> <span class="paper-type">poster</span><span class="paper-authors">Xu, Mingheng; Ma, Yunshu; Zhou, Zhiyuan</span></li>
+</ul></section>
+<section class="papers-day"><h3>Tuesday 3 November 2026</h3><div class="papers-grid">
+<section class="paper-session">
+<p class="paper-session-meta">09:00–10:20 | Wenjin Hall A | Technical</p>
+<h4>T2 Visual Generation and Storytelling</h4><ul>
+<li><strong>SSCtrl: Spatial-Semantic Control with Decoupled Local-Global Attention Focusing in Diffusion Transformer</strong> <span class="paper-type">full</span><span class="paper-authors">Lin, Haichuan; Wei, Zeng</span></li>
+<li><strong>VIS-Shepherd: Constructing Critic for LLM-based Data Visualization Generation</strong> <span class="paper-type">full</span><span class="paper-authors">Pan, Bo; Fu, Yixiao; Wang, Ke; Lu, Junyu; Pan, Lunke; Qian, Ziyang; Chen, Yuhan; Wang, Guoliang; Zhou, Yitao; Zheng, Li; Tang, Yinghao; Wen, Zhen; Wu, Yunchen; Lu, Junhua; Zhu, Biao; Zhu, Minfeng; Zhang, Bo; Chen, Wei</span></li>
+<li><strong>Seamless: Strategies for Combining Practical Light with Virtual Light in Virtual Production</strong> <span class="paper-type">full</span><span class="paper-authors">LU, Wenchuan; LI, Yuelu; LIN, Shiqi; HUI, Pan; Yip, David</span></li>
+<li><strong>VideoMaster: Directing Data Videos with Cinematic Narrative</strong> <span class="paper-type">full</span><span class="paper-authors">Luo, Yile; Xie, Yupeng; Yang, Weikai</span></li>
+<li><strong>PoemVis: An Interactive Tool for Interpretable Poetry Image Generation</strong> <span class="paper-type">full</span><span class="paper-authors">Kou, Jiajia; Wang, Haoxuan; Zhou, Yuqi; Zheng, Luogan; Liu, Yuhua; Zhou, Zhiguang</span></li>
+</ul></section>
+<section class="paper-session">
+<p class="paper-session-meta">09:00–10:20 | Wenjin Hall B | Cultural Computing</p>
+<h4>C3 Immersive Cultural Experiences</h4><ul>
+<li><strong>From Literary World to Virtual Stage: Visualizing the Cultural Imaginary of Gormenghast</strong> <span class="paper-type">full</span><span class="paper-authors">Gallist, Nils; Bayr, Lisa; Arbeithuber, Katharina; Hagler, Juergen</span></li>
+<li><strong>Ink Rhythm: Mutual Metaphorization of Calligraphy and Dance for Embodied Immersive Cultural Experience</strong> <span class="paper-type">full</span><span class="paper-authors">Tang, Ning; Xu, Ting; Zhang, Kang; Yip, David Kei-man; Wang, Zeyu</span></li>
+<li><strong>ColorFilteringAR: Designing an Interactive Installation to Address Accessibility Challenges Faced by Non-Native Speakers in Urban Mobility</strong> <span class="paper-type">full</span><span class="paper-authors">GANBAT, Khaliun; FU, HaoKun; WU, Yeqing; ZHU, Lisha; ZHANG, Wanlin</span></li>
+<li><strong>The Miniature Han Theatre: AI-Driven Spatial Analysis and VR Gamification of Pottery Houses</strong> <span class="paper-type">short</span><span class="paper-authors">Wang, Yongbin; Qin, Jiage; Wu, You; Xiao, Qiushi</span></li>
+<li><strong>Awakening the Lost Moat: AI-Assisted Multimodal Semantic Integration and AR Spatial Mapping for Millennium-Old Water Heritage</strong> <span class="paper-type">short</span><span class="paper-authors">Tian, Junwei; Yu, Jian; Wang, Yu; Huang, Leran; Chen, Haokai; Zeng, Wei</span></li>
+<li><strong>PuppetryAR: Connecting Puppet Making and Performance through A Phygital Heritage Experience</strong> <span class="paper-type">poster</span><span class="paper-authors">LI, Xintian; ZHANG, Wanlin</span></li>
+</ul></section>
+<section class="paper-session">
+<p class="paper-session-meta">10:40–12:00 | Wenjin Hall A | Technical</p>
+<h4>T3 Embodied and Visual Interaction</h4><ul>
+<li><strong>Formation DancAR: Facilitating Formation Dance Practice with Augmented Reality</strong> <span class="paper-type">full</span><span class="paper-authors">Beck, Samuel; Doerr, Nina; Sedlmair, Michael; Stuerzlinger, Wolfgang; Koch, Steffen</span></li>
+<li><strong>POS-VA: A Visual Analysis System for Peking Opera Scripts</strong> <span class="paper-type">full</span><span class="paper-authors">Li, Ye; Bao, Han Ni; Chen, Si Jie; Yang, Ying Ping; Chen, Jia Zhou</span></li>
+<li><strong>AxisMirror: An Interactive Visual Analytics System for Beijing Cultural Landmarks</strong> <span class="paper-type">full</span><span class="paper-authors">Li, Wenwen; Lei, Yuxin; Chen, Jiayi; Yang, Yingping; You, Guangtao; Chen, Jiazhou</span></li>
+<li><strong>Row-to-Flow: A Semantic Layer for Rhythmic Embodied Interaction</strong> <span class="paper-type">short</span><span class="paper-authors">Cao, Jinbo; Cao, Qizhen; Li, Zhelai</span></li>
+<li><strong>Co-Creating Heritage Exhibitions: A Multi-Agent System Translating Design Expertise into Human-AI Collaboration</strong> <span class="paper-type">short</span><span class="paper-authors">Yang, Jun; Yu, Jian; Rao, Ziyi; Zhong, Jing; Zhang, Zhengjia; Nanetti, Andrea</span></li>
+<li><strong>CultureWeave: A Knowledge Graph-grounded AIGC Framework for Ethnic Costume Storytelling</strong> <span class="paper-type">short</span><span class="paper-authors">LI, YANYI; SHE, JAMES</span></li>
+</ul></section>
+<section class="paper-session">
+<p class="paper-session-meta">10:40–12:00 | Wenjin Hall B | Art Paper</p>
+<h4>A2 Heritage and Memory</h4><ul>
+<li><strong>Practical Application of a Spatial Reality Display for 3D Digital Archives --- A Case Study in a Football Museum</strong> <span class="paper-type">full</span><span class="paper-authors">Murakami, Takahito; Torii, Maya; Li, Jingjing; Ochiai, Yoichi</span></li>
+<li><strong>MR ILLUMINATES: Participatory Heritage Reconstruction through Ritualized Mixed Reality</strong> <span class="paper-type">full</span><span class="paper-authors">He, Yezi; Wang, Zhaohan; Xiao, Sirui; Qin, Zekun; Bai, Yun; Yv, Enze; Lv, Xin</span></li>
+<li><strong>Ink Symphony: A “Zhi Yin” Narrative from Calligraphy to Music in VR</strong> <span class="paper-type">full</span><span class="paper-authors">SHE, Weijiang; ZHU, Xiaolin; MENG, Xiangze; ZHANG, Kang; WANG, Zeyu; YIP, David</span></li>
+<li><strong>It Happened Tomorrow: Re-situating Archival Water Images Across Participatory Climate Fiction, Video, and Geo-Exploration</strong> <span class="paper-type">short</span><span class="paper-authors">De Gaetano, Carlo; Xu, Dan</span></li>
+<li><strong>Against the Grain Re-architecting Traditional Myths through Point-Cloud Heritage and Interactive VR</strong> <span class="paper-type">short</span><span class="paper-authors">Chen, Donghao; Jiang, Yuyang; HUI, Pan</span></li>
+<li><strong>Visualizing Cross-Cultural Contexts: An AI-Assisted Archaeological Knowledge-to-Narrative Translation Model for Digital Heritage</strong> <span class="paper-type">poster</span><span class="paper-authors">Zheng, Yuanyue</span></li>
+</ul></section>
+</div></section>
+<section class="papers-day"><h3>Wednesday 4 November 2026</h3><div class="papers-grid">
+<section class="paper-session">
+<p class="paper-session-meta">09:00–10:20 | Wenjin Hall A | Art Paper</p>
+<h4>A3 AI Cinema and Performance</h4><ul>
+<li><strong>From Policy Landscapes to Screenplay-Driven Futures: An integrative GenAI Workflow for Neo-Lingnan Narratives in the Greater Bay Area</strong> <span class="paper-type">full</span><span class="paper-authors">Liu, Siyuan; Fu, Zheyu; Hu, Xiaoyan; Qiang, Han; Shi, Tianzuo; Yip, David</span></li>
+<li><strong>From Image Generation to World Generation-A Paradigm Shift in Narrative Creation for AI-Generative Theatre</strong> <span class="paper-type">full</span><span class="paper-authors">cheng, kevin; lan, xinyi</span></li>
+<li><strong>Embodied Synthetic Cinema: Motion Capture, Virtual Production, and Generative Imagery Anchored in Human Performance</strong> <span class="paper-type">short</span><span class="paper-authors">LI, Yuelu; WU, Haoyu; QIANG, Han; YIP, David</span></li>
+<li><strong>From Alignment to Erasure: The Making and Meaning of IKHNOS (Trace Field), an AI Speculative Documentary</strong> <span class="paper-type">short</span><span class="paper-authors">Liu, Shuai</span></li>
+<li><strong>In The In-Between AI Generative Anomalies in Moving Images</strong> <span class="paper-type">poster</span><span class="paper-authors">Zheng, Qi; Wang, Lei</span></li>
+<li><strong>Co-Storytellers: An AI-Mediated Practice for Participatory Documentary Storytelling</strong> <span class="paper-type">poster</span><span class="paper-authors">Liu, Siyuan; Xu, Ting; Lin, Sibo; Wan, Cho Yiu; Yip, David</span></li>
+</ul></section>
+<section class="paper-session">
+<p class="paper-session-meta">10:40–12:00 | Wenjin Hall A | Art Paper</p>
+<h4>A4 Algorithmic Aesthetics</h4><ul>
+<li><strong>Negative Shanshui: Staging Environmental Reflection through AI-Generated Ruptured Landscapes in the Anthropocene</strong> <span class="paper-type">full</span><span class="paper-authors">Zhou, Aven-Le</span></li>
+<li><strong>EmojiEncoder: Co-Creating Visual Narratives as Living Digital Cultural Memory</strong> <span class="paper-type">full</span><span class="paper-authors">WANG, Lin; LIU, Jiayu</span></li>
+<li><strong>Creative Exploration of RAG Embedding Space</strong> <span class="paper-type">short</span><span class="paper-authors">Xu, Dan</span></li>
+<li><strong>The Interface Still Responds: How Algorithms and Contexts Reshape the Meaning of Digital Symbols</strong> <span class="paper-type">short</span><span class="paper-authors">Zhang, Ziyao; Li, Jingyi</span></li>
+<li><strong>Forced Ugliness: Why a “Pathetic” ScribbleWent Viral</strong> <span class="paper-type">poster</span><span class="paper-authors">jia, yizhen</span></li>
+<li><strong>The Loaded Die: A Speculative Design Approach to Constructing Algorithms as Non-Human Actors</strong> <span class="paper-type">poster</span><span class="paper-authors">Xiong, Xinyu; Jianheng, Xiang</span></li>
+</ul></section>
+</div></section>
+    </main>
+
+    <footer class="text-center">
+        <small>Copyright &copy; 2026 VINCI</small>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
