@@ -105,6 +105,26 @@
     <meta name="msapplication-config" content="assets/browserconfig.xml">
     <link rel="yandex-tableau-widget" href="assets/yandex-browser-manifest.json">
     <link href="styles.css" rel="stylesheet">
+    <style>
+        .local-organization { padding-top: 2rem; padding-bottom: 3rem; }
+        .local-organization h2 { display: flex; align-items: center; color: #111; font-weight: 700; margin-bottom: 20px; }
+        .local-organization h2::after { content: ""; flex: 1; height: 1.5px; margin-left: 1.5rem; background: #00008b; }
+        .local-organization h2 img { width: auto; height: 30px; flex-shrink: 0; margin-right: 1rem; }
+        .local-org-group { display: grid; grid-template-columns: 33.333% minmax(0, 1fr); }
+        .local-org-group h3 { font-size: 1.2rem; font-weight: 700; text-align: right; text-transform: none !important; padding-right: .75rem; margin: 0 0 10px; }
+        .local-org-members { list-style: none; padding: 0 .75rem; margin: 0; }
+        .local-org-person { display: flex; align-items: center; min-width: 0; margin: 10px 0; }
+        .local-org-person img { width: 60px; height: 60px; flex: 0 0 60px; border-radius: 50%; object-fit: cover; margin-right: 15px; }
+        .local-org-photo-empty { width: 60px; flex: 0 0 60px; margin-right: 15px; }
+        .local-org-person strong, .local-org-person small { display: block; }
+        .local-org-person strong { font-size: 1.1em; }
+        .local-org-person small { color: #666; }
+        @media (max-width: 767.98px) {
+            .local-org-group { grid-template-columns: 1fr; gap: .75rem; }
+            .local-org-group h3 { text-align: left; }
+            .local-org-members { padding: 0; }
+        }
+    </style>
 </head>
 
 <body>
@@ -140,6 +160,9 @@
                             <a class="nav-link custom-nav-link" href="schedule.html">Schedule</a>
                         </li>
                         <li class="nav-item d-none d-xl-block">
+                            <a class="nav-link custom-nav-link" href="exhibit.html">Exhibit</a>
+                        </li>
+                        <li class="nav-item d-none d-xl-block">
                             <a class="nav-link custom-nav-link" href="registration.html">Registration</a>
                         </li>
                         <li class="nav-item d-none d-xl-block">
@@ -168,6 +191,7 @@
                                 <li><a class="dropdown-item mobile-nav-child" href="cultural.html">Cultural Computing Special Track</a></li>
                                 <li><a class="dropdown-item" href="keynotes.html">Keynotes</a></li>
                                 <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
+                                <li><a class="dropdown-item" href="exhibit.html">Exhibit</a></li>
                                 <li><a class="dropdown-item" href="registration.html">Registration</a></li>
                                 <li><a class="dropdown-item active-page" href="committees.html">Committees</a></li>
                                 <li><span class="dropdown-item mobile-nav-section">Venue</span></li>
@@ -405,29 +429,85 @@
                             <small style="color: #666;">Hong Kong University of Science and Technology (Guangzhou)</small>
                         </div>
                     </dd>
-                    <dt></dt>
-                    <dd style="display: flex; align-items: center; margin: 10px 0;">
-                        <img src="img/ziheng zhang.png" alt="Ziheng ZHANG"
-                            style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 15px;">
-                        <div>
-                            <strong style="font-size: 1.1em;">Ziheng ZHANG</strong><br>
-                            <small style="color: #666;">Guangzhou Academy of Fine Arts</small>
-                        </div>
-                    </dd>
-
-                    <dt style="font-weight: bold; font-size: 1.2em; margin-bottom: 10px;"><strong>Registration Chair</strong></dt>
-                    <dd style="display: flex; align-items: center; margin: 10px 0;">
-                        <img src="img/shilongxiang.png" alt="Longxiang Shi"
-                            style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-right: 15px;">
-                        <div>
-                            <strong style="font-size: 1.1em;">Longxiang Shi</strong><br>
-                            <small style="color: #666;">Hangzhou City University</small>
-                        </div>
-                    </dd>
-
                 </dl>
             </div>
         </div>
+    </section>
+
+    <section class="container local-organization" aria-labelledby="local-organization-title">
+        <div class="row justify-content-center">
+            <div class="col-custom">
+            <h2 id="local-organization-title"><img src="vinci-logo-sm_f5df.svg" alt="">Local Arrangement &amp; Organization</h2>
+
+            <div class="local-org-group">
+                <h3>Organizing Chairs</h3>
+                <ul class="local-org-members">
+                    <li class="local-org-person"><img src="img/wei zhang.jpg" alt="Wei Zhang" loading="lazy"><div><strong>Wei Zhang</strong><small>Hangzhou City University</small></div></li>
+                    <li class="local-org-person"><img src="img/xumeng wang.png" alt="Xumeng Wang" loading="lazy"><div><strong>Xumeng Wang</strong><small>Nankai University</small></div></li>
+                    <li class="local-org-person"><img src="img/Wei ren.jpg" alt="Wei Ren" loading="lazy"><div><strong>Wei Ren</strong><small>Hangzhou City University</small></div></li>
+                </ul>
+            </div>
+
+            <div class="local-org-group">
+                <h3>Finance Chairs</h3>
+                <ul class="local-org-members">
+                    <li class="local-org-person"><img src="img/canghong jin.jpg" alt="Canghong Jin" loading="lazy"><div><strong>Canghong Jin</strong><small>Hangzhou City University</small></div></li>
+                    <li class="local-org-person"><img src="img/Hui yan.jpg" alt="Hui Yan" loading="lazy"><div><strong>Hui Yan</strong><small>Hangzhou City University</small></div></li>
+                </ul>
+            </div>
+
+            <div class="local-org-group">
+                <h3>Publicity Chairs</h3>
+                <ul class="local-org-members">
+                    <li class="local-org-person"><img src="img/Tongzhou Yu.jpg" alt="Tongzhou Yu" loading="lazy"><div><strong>Tongzhou Yu</strong><small>China Academy of Art</small></div></li>
+                    <li class="local-org-person"><img src="img/ye tao.jpg" alt="Ye Tao" loading="lazy"><div><strong>Ye Tao</strong><small>Hangzhou City University</small></div></li>
+                    <li class="local-org-person"><img src="img/ziheng zhang.png" alt="Ziheng Zhang" loading="lazy"><div><strong>Ziheng Zhang</strong><small>Guangzhou Academy of Fine Arts</small></div></li>
+                </ul>
+            </div>
+
+            <div class="local-org-group">
+                <h3>Registration Chairs</h3>
+                <ul class="local-org-members">
+                    <li class="local-org-person"><img src="img/longxiang shi.jpg" alt="Longxiang Shi" loading="lazy"><div><strong>Longxiang Shi</strong><small>Hangzhou City University</small></div></li>
+                    <li class="local-org-person"><img src="img/Aijia zhang.jpg" alt="Aijia Zhang" loading="lazy"><div><strong>Aijia Zhang</strong><small>Hangzhou City University</small></div></li>
+                    <li class="local-org-person"><img src="img/Jun wang.jpg" alt="Jun Wang" loading="lazy"><div><strong>Jun Wang</strong><small>Hangzhou City University</small></div></li>
+                </ul>
+            </div>
+
+            <div class="local-org-group">
+                <h3>Web Chair</h3>
+                <ul class="local-org-members">
+                    <li class="local-org-person"><img src="img/hairong jin.jpg" alt="Hairong Jin" loading="lazy"><div><strong>Hairong Jin</strong><small>Hangzhou City University</small></div></li>
+                </ul>
+            </div>
+
+            <div class="local-org-group">
+                <h3>Archive Chairs</h3>
+                <ul class="local-org-members">
+                    <li class="local-org-person"><img src="img/Lin Yin.jpg" alt="Lin Yin" loading="lazy"><div><strong>Lin Yin</strong><small>Hangzhou City University</small></div></li>
+                    <li class="local-org-person"><img src="img/Chaoqing xu.jpg" alt="Chaoqing Xu" loading="lazy"><div><strong>Chaoqing Xu</strong><small>Hangzhou City University</small></div></li>
+                </ul>
+            </div>
+
+            <div class="local-org-group">
+                <h3>Volunteer Chairs</h3>
+                <ul class="local-org-members">
+                    <li class="local-org-person"><img src="img/yuning hu.jpg" alt="Yuning Hu" loading="lazy"><div><strong>Yuning Hu</strong><small>Hangzhou City University</small></div></li>
+                    <li class="local-org-person"><img src="img/xueyong yu.jpg" alt="Xueyong Yu" loading="lazy"><div><strong>Xueyong Yu</strong><small>Hangzhou City University</small></div></li>
+                </ul>
+            </div>
+
+            <div class="local-org-group">
+                <h3>Visual Identity Design</h3>
+                <ul class="local-org-members">
+                    <li class="local-org-person"><span class="local-org-photo-empty" aria-hidden="true"></span><div><strong>Li Zhang</strong><small>China Academy of Art</small></div></li>
+                    <li class="local-org-person"><span class="local-org-photo-empty" aria-hidden="true"></span><div><strong>Xiaoyue Shan</strong><small>China Academy of Art</small></div></li>
+                    <li class="local-org-person"><span class="local-org-photo-empty" aria-hidden="true"></span><div><strong>Jingwen Mao</strong><small>China Academy of Art</small></div></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </section>
 
         <!-- <div class="row justify-content-center">
             <div class="col-custom col-padding">

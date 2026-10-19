@@ -10487,9 +10487,10 @@ tr.table-emph {
 /* 3. 针对小屏幕的微调，防止太宽溢出 */
 @media (max-width: 1400px) {
     .custom-nav-link {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-        letter-spacing: 1px;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        font-size: .92rem;
+        letter-spacing: 0;
     }
 }
 /* 1. 基础容器设置 */

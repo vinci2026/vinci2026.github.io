@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exhibit - VINCI 2026</title>
+    <meta name="keywords" content="VINCI 2026, Art and Media Gallery, OōEli Tianmuli, curatorial team">
+    <meta name="description" content="VINCI 2026 Art and Media Gallery exhibit venue and curatorial team">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .exhibit-content { max-width: 1100px; padding: 2rem 1rem 3rem; }
+        .exhibit-content h1 { font-size: 2rem; font-weight: 700; border-bottom: 2px solid #00008b; padding-bottom: 1rem; margin-bottom: 2rem; }
+        .exhibit-content h2 { font-size: 1.5rem; color: #1e555a; margin: 2.5rem 0 1rem; }
+        .exhibit-content h3 { font-size: 1.15rem; color: #1e555a; margin-bottom: .9rem; }
+        .exhibit-content p { line-height: 1.7; }
+        .exhibit-venue-photos { display: grid; grid-template-columns: 5fr 7fr; gap: 1rem; margin: 1.5rem 0; }
+        .exhibit-venue-photos img { width: 100%; height: 320px; object-fit: contain; background: #f3f3f3; padding: 8px; }
+        .exhibit-venue-overview { display: block; width: 100%; max-width: 760px; max-height: 380px; object-fit: contain; background: #f3f3f3; padding: 8px; margin: 0 auto 2rem; }
+        .exhibit-team { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+        .exhibit-group { padding-top: 1rem; border-top: 1px solid #c9d8da; }
+        .exhibit-group ul { list-style: none; padding: 0; margin: 0; }
+        .exhibit-group li { margin-bottom: 1rem; }
+        .exhibit-group strong, .exhibit-group span { display: block; }
+        .exhibit-group span { color: #596368; font-size: .92rem; }
+        .exhibit-curators { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+        .exhibit-curators figure { margin: 0; }
+        .exhibit-curators img { display: block; width: 100%; max-width: 170px; aspect-ratio: 1; object-fit: cover; margin-bottom: .7rem; }
+        .exhibit-curators figcaption strong, .exhibit-curators figcaption span { display: block; }
+        .exhibit-curators figcaption span { color: #596368; font-size: .92rem; }
+        .exhibit-note { display: inline !important; color: #596368; font-size: .9rem; }
+        @media (max-width: 767.98px) {
+            .exhibit-venue-photos, .exhibit-team { grid-template-columns: 1fr; }
+            .exhibit-venue-photos img { height: auto; max-height: 320px; }
+            .exhibit-curators { gap: .75rem; }
+        }
+        @media (max-width: 480px) { .exhibit-curators { grid-template-columns: 1fr 1fr; } }
+    </style>
+</head>
+
+<body>
+    <section class="container-fluid" style="background-color: black; padding: 10px 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <a href="index.html"><img src="img/logo.png" alt="VINCI" style="height: 40px; width: auto;"></a>
+                </div>
+                <div class="col">
+                    <ul class="nav navbar justify-content-end">
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="index.html">Overview</a></li>
+                        <li class="nav-item d-none d-xl-block dropdown custom-hover-dropdown">
+                            <a class="nav-link custom-nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Submissions</a>
+                            <ul class="dropdown-menu custom-dark-menu">
+                                <li><a class="dropdown-item" href="submissions.html">General Information</a></li>
+                                <li><a class="dropdown-item" href="technical.html">Technical Papers</a></li>
+                                <li><a class="dropdown-item" href="art.html">Art Paper, Art Gallery &amp; Media Gallery Tracks</a></li>
+                                <li><a class="dropdown-item" href="cultural.html">Cultural Computing Special Track</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="keynotes.html">Keynotes</a></li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="schedule.html">Schedule</a></li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link active-page" href="exhibit.html">Exhibit</a></li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="registration.html">Registration</a></li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="committees.html">Committees</a></li>
+                        <li class="nav-item d-none d-xl-block dropdown custom-hover-dropdown">
+                            <a class="nav-link custom-nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Venue</a>
+                            <ul class="dropdown-menu dropdown-menu-end custom-dark-menu">
+                                <li><a class="dropdown-item" href="ooeli.html">OōEli (Art and Media Gallery Track)</a></li>
+                                <li><a class="dropdown-item" href="conference-venue.html">Conference Venue &amp; Accommodation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown d-xl-none navbar-dark">
+                            <a class="nav-link dropdown-toggle custom-nav-link" data-bs-toggle="dropdown" href="#" role="button"><span class="navbar-toggler-icon me-2"></span> Navigation</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="index.html">Overview</a></li>
+                                <li><span class="dropdown-item mobile-nav-section">Submissions</span></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="submissions.html">General Information</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="technical.html">Technical Papers</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="art.html">Art Paper, Art Gallery &amp; Media Gallery Tracks</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="cultural.html">Cultural Computing Special Track</a></li>
+                                <li><a class="dropdown-item" href="keynotes.html">Keynotes</a></li>
+                                <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
+                                <li><a class="dropdown-item active-page" href="exhibit.html">Exhibit</a></li>
+                                <li><a class="dropdown-item" href="registration.html">Registration</a></li>
+                                <li><a class="dropdown-item" href="committees.html">Committees</a></li>
+                                <li><span class="dropdown-item mobile-nav-section">Venue</span></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="ooeli.html">OōEli (Art and Media Gallery Track)</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="conference-venue.html">Conference Venue &amp; Accommodation</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="header">
+        <div class="row justify-content-center mt-4">
+            <div class="col-custom" style="text-align: center;">
+                <img src="img/VINCI.jpg" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin-bottom: 20px;" alt="VINCI 2026">
+            </div>
+        </div>
+    </section>
+    <section class="container d-block d-sm-none">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-sm mt-3">
+                <p><strong><a class="text-body" href="index.html">The 19<sup>th</sup> International Symposium on Visual Information Communication and Interaction (VINCI 2026)</a></strong></p>
+                <p class="text-end">Hangzhou, China, 1-4 November 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="container exhibit-content">
+        <h1>Exhibit</h1>
+        <h2>Art &amp; Media Gallery · Futures Unbound</h2>
+        <section aria-labelledby="exhibit-venue-title">
+            <h3 id="exhibit-venue-title">OōEli Tianmuli</h3>
+            <p>OōEli Tianmuli is a landmark international art complex in Hangzhou and the official exhibition venue for the Art and Media Gallery Track of VINCI 2026 (the 19th International Symposium on Visual Information Communication and Interaction). Featuring minimalist open spaces, natural lighting, and professional audio-visual &amp; exhibition support systems, the venue fully supports new media and tech-art displays, including AI co-creation, XR immersive installations, data visualization, and interactive digital works. With rich experience in hosting international art and academic exhibitions, Tianmuli advocates inclusive and participatory public art, which closely aligns with VINCI 2026&rsquo;s core vision of integrating technology, art, and cross-cultural communication.</p>
+            <div class="exhibit-venue-photos">
+                <img src="img/tianmuli1.png" alt="OōEli Tianmuli exterior" loading="lazy">
+                <img src="img/tianmuli2.png" alt="OōEli Tianmuli exhibition space" loading="lazy">
+            </div>
+            <img class="exhibit-venue-overview" src="img/tianmuli3.png" alt="OōEli Tianmuli venue overview" loading="lazy">
+        </section>
+
+        <section aria-labelledby="curatorial-team-title">
+            <h2 id="curatorial-team-title">Curatorial Team</h2>
+            <div class="exhibit-team">
+                <div class="exhibit-group">
+                    <h3>Academic Advisors</h3>
+                    <ul>
+                        <li><strong>Kang Zhang <span class="exhibit-note">(TBC)</span></strong><span>HKUST (Guangzhou)</span></li>
+                        <li><strong>Wei Chen</strong><span>Zhejiang University</span></li>
+                    </ul>
+                </div>
+                <div class="exhibit-group">
+                    <h3>Exhibition Coordinator</h3>
+                    <ul><li><strong>Wei Zhang</strong><span>Hangzhou City University</span></li></ul>
+                </div>
+            </div>
+            <h3>Curators</h3>
+            <div class="exhibit-curators">
+                <figure><img src="img/james-she.jpg" alt="James She" loading="lazy"><figcaption><strong>James She</strong><span>HKUST (Guangzhou)</span></figcaption></figure>
+                <figure><img src="img/Tongzhou Yu.jpg" alt="Tongzhou Yu" loading="lazy"><figcaption><strong>Tongzhou Yu</strong><span>China Academy of Art</span></figcaption></figure>
+                <figure><img src="img/yinbing.jpg" alt="Yin Bing" loading="lazy"><figcaption><strong>Yin Bing</strong><span>China Academy of Art</span></figcaption></figure>
+            </div>
+            <div class="exhibit-team">
+                <div class="exhibit-group">
+                    <h3>Executive Curators</h3>
+                    <ul>
+                        <li><strong>Jingwen Mao</strong><span>China Academy of Art</span></li>
+                        <li><strong>Xiaoyue Shan</strong><span>China Academy of Art</span></li>
+                        <li><strong>Chenyao Li</strong><span>China Academy of Art</span></li>
+                    </ul>
+                </div>
+                <div class="exhibit-group">
+                    <h3>Curatorial Assistant</h3>
+                    <ul><li><strong>Le Zhan</strong><span>China Academy of Art</span></li></ul>
+                </div>
+            </div>
+            <div class="exhibit-group">
+                <h3>Academic Committee</h3>
+                <ul class="exhibit-team">
+                    <li><strong>Tong Hua</strong><span>Communication University of China</span></li>
+                    <li><strong>Hyunjung Kim</strong><span>The University of Tokyo</span></li>
+                    <li><strong>Zi-Wei Wu</strong><span>University of Macau</span></li>
+                    <li><strong>Seungwoo Je</strong><span>Southern University of Science and Technology</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center"><small>Copyright &copy; 2026 VINCI</small></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

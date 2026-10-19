@@ -216,11 +216,10 @@ def main():
 
 <body>
 """ + head[head.index('    <section class="container-fluid"'):]
-    head = head.replace('href="keynotes.html">Keynotes</a>', 'href="keynotes.html">Keynotes</a>')
     head = head.replace('custom-nav-link active-page" href="keynotes.html"', 'custom-nav-link" href="keynotes.html"')
     head = head.replace('dropdown-item active-page" href="keynotes.html"', 'dropdown-item" href="keynotes.html"')
-    head = head.replace('                        <li class="nav-item d-none d-xl-block">\n                            <a class="nav-link custom-nav-link" href="registration.html">', '                        <li class="nav-item d-none d-xl-block">\n                            <a class="nav-link custom-nav-link active-page" href="schedule.html">Schedule</a>\n                        </li>\n                        <li class="nav-item d-none d-xl-block">\n                            <a class="nav-link custom-nav-link" href="registration.html">')
-    head = head.replace('                                <li><a class="dropdown-item" href="registration.html">', '                                <li><a class="dropdown-item active-page" href="schedule.html">Schedule</a></li>\n                                <li><a class="dropdown-item" href="registration.html">')
+    head = head.replace('custom-nav-link" href="schedule.html"', 'custom-nav-link active-page" href="schedule.html"')
+    head = head.replace('dropdown-item" href="schedule.html"', 'dropdown-item active-page" href="schedule.html"')
     body = f'''    <main class="container schedule-content">
         <h1>Schedule</h1>
         <p class="schedule-intro">VINCI 2026 · Hangzhou, China · 1–4 November 2026. This program is subject to change.</p>
