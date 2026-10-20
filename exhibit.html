@@ -20,9 +20,17 @@
         .exhibit-content h2 { font-size: 1.5rem; color: #1e555a; margin: 2.5rem 0 1rem; }
         .exhibit-content h3 { font-size: 1.15rem; color: #1e555a; margin-bottom: .9rem; }
         .exhibit-content p { line-height: 1.7; }
+        .exhibit-details { display: flex; flex-wrap: wrap; gap: .5rem 2rem; margin: 0 0 1.5rem; }
+        .exhibit-details div { display: flex; flex-wrap: wrap; gap: .25rem .5rem; }
+        .exhibit-details dt { font-weight: 700; }
+        .exhibit-details dd { margin: 0; }
         .exhibit-venue-photos { display: grid; grid-template-columns: 5fr 7fr; gap: 1rem; margin: 1.5rem 0; }
         .exhibit-venue-photos img { width: 100%; height: 320px; object-fit: contain; background: #f3f3f3; padding: 8px; }
         .exhibit-venue-overview { display: block; width: 100%; max-width: 760px; max-height: 380px; object-fit: contain; background: #f3f3f3; padding: 8px; margin: 0 auto 2rem; }
+        .exhibit-works { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+        .exhibit-works a { display: block; min-width: 0; }
+        .exhibit-works img { display: block; width: 100%; height: auto; border: 1px solid #d8dede; }
+        .exhibit-works a:focus-visible { outline: 3px solid #1e555a; outline-offset: 3px; }
         .exhibit-team { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
         .exhibit-group { padding-top: 1rem; border-top: 1px solid #c9d8da; }
         .exhibit-group ul { list-style: none; padding: 0; margin: 0; }
@@ -34,13 +42,16 @@
         .exhibit-curators img { display: block; width: 100%; max-width: 170px; aspect-ratio: 1; object-fit: cover; margin-bottom: .7rem; }
         .exhibit-curators figcaption strong, .exhibit-curators figcaption span { display: block; }
         .exhibit-curators figcaption span { color: #596368; font-size: .92rem; }
-        .exhibit-note { display: inline !important; color: #596368; font-size: .9rem; }
         @media (max-width: 767.98px) {
             .exhibit-venue-photos, .exhibit-team { grid-template-columns: 1fr; }
             .exhibit-venue-photos img { height: auto; max-height: 320px; }
+            .exhibit-works { grid-template-columns: repeat(2, minmax(0, 1fr)); }
             .exhibit-curators { gap: .75rem; }
         }
-        @media (max-width: 480px) { .exhibit-curators { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 480px) {
+            .exhibit-works { grid-template-columns: 1fr; }
+            .exhibit-curators { grid-template-columns: 1fr 1fr; }
+        }
     </style>
 </head>
 
@@ -120,6 +131,10 @@
         <h2>Art &amp; Media Gallery · Futures Unbound</h2>
         <section aria-labelledby="exhibit-venue-title">
             <h3 id="exhibit-venue-title">OōEli Tianmuli</h3>
+            <dl class="exhibit-details">
+                <div><dt>Exhibition dates:</dt><dd>1–15 November 2026</dd></div>
+                <div><dt>Location:</dt><dd>OōEli, Building 16, 3F, Hangzhou, China</dd></div>
+            </dl>
             <p>OōEli Tianmuli is a landmark international art complex in Hangzhou and the official exhibition venue for the Art and Media Gallery Track of VINCI 2026 (the 19th International Symposium on Visual Information Communication and Interaction). Featuring minimalist open spaces, natural lighting, and professional audio-visual &amp; exhibition support systems, the venue fully supports new media and tech-art displays, including AI co-creation, XR immersive installations, data visualization, and interactive digital works. With rich experience in hosting international art and academic exhibitions, Tianmuli advocates inclusive and participatory public art, which closely aligns with VINCI 2026&rsquo;s core vision of integrating technology, art, and cross-cultural communication.</p>
             <div class="exhibit-venue-photos">
                 <img src="img/tianmuli1.png" alt="OōEli Tianmuli exterior" loading="lazy">
@@ -130,19 +145,6 @@
 
         <section aria-labelledby="curatorial-team-title">
             <h2 id="curatorial-team-title">Curatorial Team</h2>
-            <div class="exhibit-team">
-                <div class="exhibit-group">
-                    <h3>Academic Advisors</h3>
-                    <ul>
-                        <li><strong>Kang Zhang <span class="exhibit-note">(TBC)</span></strong><span>HKUST (Guangzhou)</span></li>
-                        <li><strong>Wei Chen</strong><span>Zhejiang University</span></li>
-                    </ul>
-                </div>
-                <div class="exhibit-group">
-                    <h3>Exhibition Coordinator</h3>
-                    <ul><li><strong>Wei Zhang</strong><span>Hangzhou City University</span></li></ul>
-                </div>
-            </div>
             <h3>Curators</h3>
             <div class="exhibit-curators">
                 <figure><img src="img/james-she.jpg" alt="James She" loading="lazy"><figcaption><strong>James She</strong><span>HKUST (Guangzhou)</span></figcaption></figure>
@@ -170,7 +172,20 @@
                     <li><strong>Hyunjung Kim</strong><span>The University of Tokyo</span></li>
                     <li><strong>Zi-Wei Wu</strong><span>University of Macau</span></li>
                     <li><strong>Seungwoo Je</strong><span>Southern University of Science and Technology</span></li>
+                    <li><strong>Nicole Chan</strong><span>China Academy of Art</span></li>
                 </ul>
+            </div>
+        </section>
+
+        <section aria-labelledby="exhibit-works-title">
+            <h2 id="exhibit-works-title">Works</h2>
+            <div class="exhibit-works">
+                <a href="img/futures-unbound-work-1.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 1"><img src="img/futures-unbound-work-1.jpg" alt="Futures Unbound work 1" loading="lazy"></a>
+                <a href="img/futures-unbound-work-2.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 2"><img src="img/futures-unbound-work-2.jpg" alt="Futures Unbound work 2" loading="lazy"></a>
+                <a href="img/futures-unbound-work-3.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 3"><img src="img/futures-unbound-work-3.jpg" alt="Futures Unbound work 3" loading="lazy"></a>
+                <a href="img/futures-unbound-work-4.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 4"><img src="img/futures-unbound-work-4.jpg" alt="Futures Unbound work 4" loading="lazy"></a>
+                <a href="img/futures-unbound-work-5.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 5"><img src="img/futures-unbound-work-5.jpg" alt="Futures Unbound work 5" loading="lazy"></a>
+                <a href="img/futures-unbound-work-6.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 6"><img src="img/futures-unbound-work-6.jpg" alt="Futures Unbound work 6" loading="lazy"></a>
             </div>
         </section>
     </main>
