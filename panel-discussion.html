@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel Discussion - VINCI 2026</title>
+    <meta name="description" content="Leonardo at VINCI 2026 panel discussion on generations of generative art">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .panel-content { max-width: 1000px; padding: 2rem 1rem 3rem; }
+        .panel-content h1 { font-size: 2rem; font-weight: 700; border-bottom: 2px solid #00008b; padding-bottom: 1rem; margin-bottom: 1.5rem; }
+        .panel-content h2 { font-size: 1.5rem; color: #1e555a; margin: 2.5rem 0 1rem; }
+        .panel-content h3 { font-size: 1.15rem; color: #1e555a; margin: 0 0 .35rem; }
+        .panel-content p { line-height: 1.7; }
+        .panel-title { font-size: clamp(1.5rem, 2vw, 2rem); line-height: 1.25; margin-bottom: 1rem; }
+        .panel-meta { font-weight: 600; color: #526067; }
+        .panel-people { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+        .panel-person { display: flex; align-items: flex-start; gap: 1rem; border-top: 1px solid #c9d8da; padding-top: 1rem; min-width: 0; }
+        .panel-person img { width: 120px; height: 120px; object-fit: cover; flex: none; }
+        .panel-person h4 { font-size: 1.1rem; margin: 0 0 .4rem; }
+        .panel-person p { margin-bottom: 0; }
+        .panel-tba { margin-top: 1rem; }
+        @media (max-width: 767.98px) { .panel-people { grid-template-columns: 1fr; } }
+        @media (max-width: 400px) { .panel-person img { width: 88px; height: 88px; } }
+    </style>
+</head>
+<body>
+    <section class="container-fluid" style="background-color: black; padding: 10px 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <a href="index.html"><img src="img/logo.png" alt="VINCI" style="height: 40px; width: auto;"></a>
+                </div>
+                <div class="col">
+                    <ul class="nav navbar justify-content-end">
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="index.html">Overview</a></li>
+                        <li class="nav-item d-none d-xl-block dropdown custom-hover-dropdown">
+                            <a class="nav-link custom-nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Submissions</a>
+                            <ul class="dropdown-menu custom-dark-menu">
+                                <li><a class="dropdown-item" href="submissions.html">General Information</a></li>
+                                <li><a class="dropdown-item" href="technical.html">Technical Papers</a></li>
+                                <li><a class="dropdown-item" href="art.html">Art Paper, Art Gallery &amp; Media Gallery Tracks</a></li>
+                                <li><a class="dropdown-item" href="cultural.html">Cultural Computing Special Track</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="keynotes.html">Keynotes</a></li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="schedule.html">Schedule</a></li>
+                        <li class="nav-item d-none d-xl-block dropdown custom-hover-dropdown">
+                            <a class="nav-link custom-nav-link active-page" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Exhibit</a>
+                            <ul class="dropdown-menu custom-dark-menu">
+                                <li><a class="dropdown-item" href="exhibit.html">Exhibit</a></li>
+                                <li><a class="dropdown-item active-page" href="panel-discussion.html">Panel Discussion</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="registration.html">Registration</a></li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="committees.html">Committees</a></li>
+                        <li class="nav-item d-none d-xl-block dropdown custom-hover-dropdown">
+                            <a class="nav-link custom-nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Venue</a>
+                            <ul class="dropdown-menu dropdown-menu-end custom-dark-menu">
+                                <li><a class="dropdown-item" href="ooeli.html">OōEli (Art and Media Gallery Track)</a></li>
+                                <li><a class="dropdown-item" href="conference-venue.html">Conference Venue &amp; Accommodation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown d-xl-none navbar-dark">
+                            <a class="nav-link dropdown-toggle custom-nav-link" data-bs-toggle="dropdown" href="#" role="button"><span class="navbar-toggler-icon me-2"></span> Navigation</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="index.html">Overview</a></li>
+                                <li><span class="dropdown-item mobile-nav-section">Submissions</span></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="submissions.html">General Information</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="technical.html">Technical Papers</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="art.html">Art Paper, Art Gallery &amp; Media Gallery Tracks</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="cultural.html">Cultural Computing Special Track</a></li>
+                                <li><a class="dropdown-item" href="keynotes.html">Keynotes</a></li>
+                                <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
+                                <li><span class="dropdown-item mobile-nav-section">Exhibit</span></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="exhibit.html">Exhibit</a></li>
+                                <li><a class="dropdown-item mobile-nav-child active-page" href="panel-discussion.html">Panel Discussion</a></li>
+                                <li><a class="dropdown-item" href="registration.html">Registration</a></li>
+                                <li><a class="dropdown-item" href="committees.html">Committees</a></li>
+                                <li><span class="dropdown-item mobile-nav-section">Venue</span></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="ooeli.html">OōEli (Art and Media Gallery Track)</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="conference-venue.html">Conference Venue &amp; Accommodation</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="header">
+        <div class="row justify-content-center mt-4">
+            <div class="col-custom" style="text-align: center;">
+                <img src="img/VINCI.jpg" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin-bottom: 20px;" alt="VINCI 2026">
+            </div>
+        </div>
+    </section>
+    <main class="container panel-content">
+        <h1>Panel Discussion</h1>
+        <h2 class="panel-title">Leonardo @ VINCI Panel Discussion:<br>Generations of Generative Art: Are We Witnessing a New Movement?</h2>
+        <p class="panel-meta">4 November 2026 · Hangzhou, China</p>
+        <p>Leonardo/ISAST co-presents a panel at the VINCI Festival in Hangzhou, China on November 4. From Harold Cohen’s pioneering AI painter AARON to AI playing Socrates, panelists draw on works published in <em>Leonardo</em> to ask where creativity resides when humans and machines make art together. Join us in Hangzhou, or learn more and <a href="registration.html">register</a>.</p>
+
+        <section aria-labelledby="panel-participants">
+            <h2 id="panel-participants">Participants</h2>
+            <h3>Panel Moderators</h3>
+            <div class="panel-people">
+                <div class="panel-person"><img src="img/vanessa-chang.png" alt="Vanessa Chang" loading="lazy"><div><h4>Vanessa Chang</h4><p>Leonardo</p></div></div>
+                <div class="panel-person"><img src="img/james-she.jpg" alt="James She" loading="lazy"><div><h4>James She</h4><p>VINCI 2026 and HKUST(GZ)</p></div></div>
+            </div>
+            <h3 class="mt-4">Panel Members</h3>
+            <div class="panel-people">
+                <div class="panel-person"><img src="img/kang-zhang.webp" alt="Kang Zhang" loading="lazy"><div><h4>Kang Zhang</h4></div></div>
+                <div class="panel-person"><img src="img/juergen-hagler.png" alt="Jürgen Hagler" loading="lazy"><div><h4>Jürgen Hagler</h4></div></div>
+            </div>
+            <p class="panel-tba">2 more to come!</p>
+        </section>
+
+        <section aria-labelledby="panel-abstract">
+            <h2 id="panel-abstract">Abstract</h2>
+            <p>Long before “generative AI” entered everyday speech, artists were building computational systems that make art. This panel traces that lineage through works published in <em>Leonardo</em>, the journal that has documented art, science, and technology collaboration since 1968: Harold Cohen's decades-long collaboration with AARON, one of the first AI painting programs; a project that uses image-generating AI to imagine a world drowning in data and rising seas; and dialogues in which AI plays Socrates to explore the nature of living structure. From these, invited panelists will consider: Where does creativity reside when art emerges from human and machine collaboration? Can artificial imagination help us face crises that technology helps create? And how can we move from artificial intelligence toward something like augmented wisdom?</p>
+        </section>
+
+        <section aria-labelledby="panel-biographies">
+            <h2 id="panel-biographies">Moderator Biographies</h2>
+            <h3>Vanessa Chang</h3>
+            <p>Vanessa Chang is Director of Programs at Leonardo, the International Society for the Arts, Sciences, and Technology, where she develops transdisciplinary programs connecting artists, scientists, and technologists. She has curated exhibitions and public programs at SMOMA, the Beall Center for Art + Technology, and Fort Mason Center for Arts and Culture, and was lead curator with CODAME Art &amp; Tech. Her writing has appeared in <em>Slate</em>, <em>Wired</em>, <em>Noema</em>, and the <em>Los Angeles Review of Books</em>, and her work has been featured in <em>Art in America</em>, <em>Science Magazine</em>, and <em>On the Media</em>, among other venues. Her first book, <em>The Body Digital: A Brief History of Humans and Machines from Cuckoo Clocks to ChatGPT</em>, was published in 2025. She earned a Ph.D. in Modern Thought and Literature from Stanford University.</p>
+            <h3>James She</h3>
+            <p>James She is a university professor and media artist, tenured Associate Professor of Computational Media and Art at HKUST (Guangzhou) with a joint appointment in the Division of Arts and Machine Creativity at HKUST (Hong Kong). Working with advanced AI, multimedia computing, immersive systems and IoT, he translates code and datasets into evocative artistic, cultural and sensory experiences spanning art, heritage preservation, education, media and sports. He is Associate Editor of <em>Leonardo</em> (MIT Press, 2026–present), previously serving in the same role for IEEE TMM and ACM TOMM; his research features at ACM Multimedia, SIGGRAPH Asia, ISEA and in leading journals including <em>Leonardo</em>, ACM TOMM, ACM JOCCH, IEEE TMM, IEEE TMC and IEEE IoT. As a 2020 visiting artist at Qatar Museums’ Fire Station, he developed the region’s first AI-driven exhibition exploring cultural heritage and sport, with artworks exhibited worldwide. A frequent invited speaker at global art‑tech events such as the Islamic Arts Biennale (2023), Silesian Science Festival (2025) and Hong Kong AI Art Festival (2025), he leads HKUST and HKUST(GZ) student teams to present creative work at the Ars Electronica Campus Exhibit (2024–2026) to support emerging student artists’ global exposure. Discover more of James’s artistic practice here.</p>
+        </section>
+    </main>
+    <footer class="text-center"><small>Copyright &copy; 2026 VINCI</small></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
