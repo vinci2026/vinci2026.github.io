@@ -27,7 +27,7 @@
         .exhibit-venue-photos { display: grid; grid-template-columns: 5fr 7fr; gap: 1rem; margin: 1.5rem 0; }
         .exhibit-venue-photos img { width: 100%; height: 320px; object-fit: contain; background: #f3f3f3; padding: 8px; }
         .exhibit-venue-overview { display: block; width: 100%; max-width: 760px; max-height: 380px; object-fit: contain; background: #f3f3f3; padding: 8px; margin: 0 auto 2rem; }
-        .exhibit-works { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+        .exhibit-works { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem; }
         .exhibit-works a { display: block; min-width: 0; }
         .exhibit-works img { display: block; width: 100%; height: auto; border: 1px solid #d8dede; }
         .exhibit-works a:focus-visible { outline: 3px solid #1e555a; outline-offset: 3px; }
@@ -76,13 +76,8 @@
                         </li>
                         <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="keynotes.html">Keynotes</a></li>
                         <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="schedule.html">Schedule</a></li>
-                        <li class="nav-item d-none d-xl-block dropdown custom-hover-dropdown">
-                            <a class="nav-link custom-nav-link active-page" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Exhibit</a>
-                            <ul class="dropdown-menu custom-dark-menu">
-                                <li><a class="dropdown-item active-page" href="exhibit.html">Exhibit</a></li>
-                                <li><a class="dropdown-item" href="panel-discussion.html">Panel Discussion</a></li>
-                            </ul>
-                        </li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="panel-discussion.html">Panel Discussion</a></li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link active-page" href="exhibit.html">Exhibit</a></li>
                         <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="registration.html">Registration</a></li>
                         <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="committees.html">Committees</a></li>
                         <li class="nav-item d-none d-xl-block dropdown custom-hover-dropdown">
@@ -103,9 +98,8 @@
                                 <li><a class="dropdown-item mobile-nav-child" href="cultural.html">Cultural Computing Special Track</a></li>
                                 <li><a class="dropdown-item" href="keynotes.html">Keynotes</a></li>
                                 <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
-                                <li><span class="dropdown-item mobile-nav-section">Exhibit</span></li>
-                                <li><a class="dropdown-item mobile-nav-child active-page" href="exhibit.html">Exhibit</a></li>
-                                <li><a class="dropdown-item mobile-nav-child" href="panel-discussion.html">Panel Discussion</a></li>
+                                <li><a class="dropdown-item" href="panel-discussion.html">Panel Discussion</a></li>
+                                <li><a class="dropdown-item active-page" href="exhibit.html">Exhibit</a></li>
                                 <li><a class="dropdown-item" href="registration.html">Registration</a></li>
                                 <li><a class="dropdown-item" href="committees.html">Committees</a></li>
                                 <li><span class="dropdown-item mobile-nav-section">Venue</span></li>
@@ -170,13 +164,16 @@
                 </div>
                 <div class="exhibit-group">
                     <h3>Curatorial Assistant</h3>
-                    <ul><li><strong>Le Zhan</strong><span>China Academy of Art</span></li></ul>
+                    <ul>
+                        <li><strong>Le Zhan</strong><span>China Academy of Art</span></li>
+                        <li><strong>Nicole Chan</strong><span>China Academy of Art</span></li>
+                    </ul>
                 </div>
             </div>
             <div class="exhibit-group">
                 <h3>Academic Committee</h3>
                 <ul class="exhibit-team">
-                    <li><strong>Tong Hua</strong><span>Communication University of China</span></li>
+                    <li><strong>Hua Tong</strong><span>Communication University of China</span></li>
                     <li><strong>Hyunjung Kim</strong><span>The University of Tokyo</span></li>
                     <li><strong>Zi-Wei Wu</strong><span>University of Macau</span></li>
                     <li><strong>Seungwoo Je</strong><span>Southern University of Science and Technology</span></li>
@@ -186,14 +183,18 @@
         </section>
 
         <section aria-labelledby="exhibit-works-title">
-            <h2 id="exhibit-works-title">Works</h2>
+            <h2 id="exhibit-works-title">Selected Art Works and Media Works</h2>
             <div class="exhibit-works">
-                <a href="img/futures-unbound-work-1.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 1"><img src="img/futures-unbound-work-1.jpg" alt="Futures Unbound work 1" loading="lazy"></a>
-                <a href="img/futures-unbound-work-2.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 2"><img src="img/futures-unbound-work-2.jpg" alt="Futures Unbound work 2" loading="lazy"></a>
-                <a href="img/futures-unbound-work-3.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 3"><img src="img/futures-unbound-work-3.jpg" alt="Futures Unbound work 3" loading="lazy"></a>
-                <a href="img/futures-unbound-work-4.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 4"><img src="img/futures-unbound-work-4.jpg" alt="Futures Unbound work 4" loading="lazy"></a>
-                <a href="img/futures-unbound-work-5.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 5"><img src="img/futures-unbound-work-5.jpg" alt="Futures Unbound work 5" loading="lazy"></a>
-                <a href="img/futures-unbound-work-6.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 6"><img src="img/futures-unbound-work-6.jpg" alt="Futures Unbound work 6" loading="lazy"></a>
+                <a href="img/art_work/01%20Oct22.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 1"><img src="img/art_work/01%20Oct22.jpg" alt="Futures Unbound work 1" loading="lazy"></a>
+                <a href="img/art_work/02%20Oct22.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 2"><img src="img/art_work/02%20Oct22.jpg" alt="Futures Unbound work 2" loading="lazy"></a>
+                <a href="img/art_work/03%20Oct22.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 3"><img src="img/art_work/03%20Oct22.jpg" alt="Futures Unbound work 3" loading="lazy"></a>
+                <a href="img/art_work/04%20Oct22.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 4"><img src="img/art_work/04%20Oct22.jpg" alt="Futures Unbound work 4" loading="lazy"></a>
+                <a href="img/art_work/05%20Oct22.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 5"><img src="img/art_work/05%20Oct22.jpg" alt="Futures Unbound work 5" loading="lazy"></a>
+                <a href="img/art_work/06%20Oct22.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 6"><img src="img/art_work/06%20Oct22.jpg" alt="Futures Unbound work 6" loading="lazy"></a>
+                <a href="img/art_work/7%20Oct22.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 7"><img src="img/art_work/7%20Oct22.jpg" alt="Futures Unbound work 7" loading="lazy"></a>
+                <a href="img/art_work/8%20Oct22.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 8"><img src="img/art_work/8%20Oct22.jpg" alt="Futures Unbound work 8" loading="lazy"></a>
+                <a href="img/art_work/9%20Oct22.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 9"><img src="img/art_work/9%20Oct22.jpg" alt="Futures Unbound work 9" loading="lazy"></a>
+                <a href="img/art_work/10%20Oct22.jpg" target="_blank" rel="noopener" aria-label="Open Futures Unbound work 10"><img src="img/art_work/10%20Oct22.jpg" alt="Futures Unbound work 10" loading="lazy"></a>
             </div>
         </section>
     </main>
