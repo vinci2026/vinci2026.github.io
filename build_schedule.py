@@ -55,7 +55,7 @@ VENUES = {
 CHAIRS = {
     "马昱欣，\n南方科技大学": "Yuxin Ma, Southern University of Science and Technology",
     "曾伟，\n香港科技大学（广州）": "Wei Zeng, HKUST (Guangzhou)",
-    "许丕文，\n香港科技大学（广州）": "Piwen Xu, HKUST (Guangzhou)",
+    "许丕文，\n香港科技大学（广州）": "James She, HKUST (Guangzhou)",
     "Zi-Wi WU, \nHong Kong University of Science and Technology\n ": "Zi-Wei Wu, Hong Kong University of Science and Technology",
 }
 
@@ -118,8 +118,8 @@ def overview(rows):
             extra = f'<span class="schedule-chair">Chair: {escape(speaker)}</span>' if speaker else ""
             if title == "Conference Opening":
                 extra += ('<span class="schedule-chair">Welcome remarks: Yun Chen (Hangzhou City University). '
-                          'VINCI overview: Yuxin Ma (Southern University of Science and Technology). '
-                          'Paper-track overview: Yuxin Ma, Piwen Xu, Xiaojuan Chen and Wei Zeng.</span>')
+                          'VINCI overview: Kang Zhang, The Hong Kong University of Science and Technology (Guangzhou). '
+                          'Paper-track overview: Yuxin Ma, James She, Xiaojuan Chen and Wei Zeng.</span>')
             result.append(
                 '<div class="schedule-entry">'
                 f'<time>{time(current_start)}–{time(current_end)}</time>'
