@@ -54,9 +54,9 @@ VENUES = {
 
 CHAIRS = {
     "马昱欣，\n南方科技大学": "Yuxin Ma, Southern University of Science and Technology",
-    "曾伟，\n香港科技大学（广州）": "Wei Zeng, HKUST (Guangzhou)",
-    "许丕文，\n香港科技大学（广州）": "James She, HKUST (Guangzhou)",
-    "Zi-Wi WU, \nHong Kong University of Science and Technology\n ": "Zi-Wei Wu, Hong Kong University of Science and Technology",
+    "曾伟，\n香港科技大学（广州）": "Wei Zeng, The Hong Kong University of Science and Technology (Guangzhou)",
+    "许丕文，\n香港科技大学（广州）": "James She, The Hong Kong University of Science and Technology (Guangzhou)",
+    "Zi-Wi WU, \nHong Kong University of Science and Technology\n ": "Zi-Wei Wu, University of Macau",
 }
 
 ACTIVITIES = {
