@@ -63,7 +63,7 @@ ACTIVITIES = {
     "会场--天目里": "Transfer to OōEli Tianmuli",
     "Conference Dinner+表演": "Conference Dinner and Performance",
     "颁奖（5*3）-- Track Chair or ？ --文案联系James": "Awards Ceremony",
-    "明年主办介绍--Tony Huang": "Next VINCI Host Introduction — Tony Huang",
+    "明年主办介绍--Tony Huang": "VINCI 2027 Presentation",
     "--闭幕致辞-- James": "Closing Remarks — James She",
 }
 
@@ -144,6 +144,9 @@ def overview(rows):
                 extra += ('<span class="schedule-chair">Welcome remarks: Yun Chen (Hangzhou City University). '
                           'VINCI overview: Kang Zhang, The Hong Kong University of Science and Technology (Guangzhou). '
                           'Paper-track overview: Yuxin Ma, James She, Xiaojuan Chen and Wei Zeng.</span>')
+            elif title == "VINCI 2027 Presentation":
+                extra += ('<span class="schedule-chair">Tony Huang</span>'
+                          '<span class="schedule-chair">University of Technology Sydney</span>')
             result.append(
                 '<div class="schedule-entry">'
                 f'<time>{time(current_start)}–{time(current_end)}</time>'
