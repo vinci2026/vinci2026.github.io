@@ -47,7 +47,7 @@ VENUES = {
     "文锦厅外廊": "Outside Wenjin Hall",
     "各会议厅外廊": "Outside the meeting halls",
     "酒店餐厅": "Hotel restaurant",
-    "酒店大门": "Hotel entrance",
+    "酒店大门": "Entrance",
     "天目里": "OōEli Tianmuli",
     "文澜": "Wenlan",
 }
@@ -132,6 +132,8 @@ def overview(rows):
                     venue = "Wen Jin Ballroom"
             elif date == "2026.11.4":
                 venue = venue.replace("Wenjin Hall", "Wen Jin Ballroom")
+                if venue in ("Wen Jin Ballroom A", "Wen Jin Ballroom B"):
+                    venue = "Wen Jin Ballroom"
                 if title == "Coffee Break":
                     venue = "Wen Jin Ballroom"
                 elif title == "Lunch":
@@ -180,6 +182,9 @@ def details(rows):
             session_meta = value.replace(chr(160), " ")
             if current_day in ("Monday", "Tuesday", "Wednesday"):
                 session_meta = session_meta.replace("Wenjin Hall", "Wen Jin Ballroom")
+            if current_day == "Wednesday":
+                session_meta = session_meta.replace("Wen Jin Ballroom A", "Wen Jin Ballroom")
+                session_meta = session_meta.replace("Wen Jin Ballroom B", "Wen Jin Ballroom")
             parts.append(f'<p class="paper-session-meta">{escape(session_meta)}</p>')
             open_session = True
             i += 1
