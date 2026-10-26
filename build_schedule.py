@@ -114,6 +114,13 @@ def overview(rows):
                 continue
             title = activity(row["D"])
             venue = VENUES.get(row.get("G", ""), row.get("G", ""))
+            if date == "2026.11.2":
+                if title == "Coffee Break":
+                    venue = "Wenjin Hall"
+                elif title in ("Lunch", "Reception"):
+                    venue = "1F Puyue All-Day Restaurant"
+                    if title == "Reception":
+                        title = "Dinner"
             speaker = chair(row.get("F", ""))
             extra = f'<span class="schedule-chair">Chair: {escape(speaker)}</span>' if speaker else ""
             if title == "Conference Opening":
