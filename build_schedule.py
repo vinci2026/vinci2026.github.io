@@ -115,12 +115,27 @@ def overview(rows):
             title = activity(row["D"])
             venue = VENUES.get(row.get("G", ""), row.get("G", ""))
             if date == "2026.11.2":
+                venue = venue.replace("Wenjin Hall", "Wen Jin Ballroom")
                 if title == "Coffee Break":
-                    venue = "Wenjin Hall"
+                    venue = "Wen Jin Ballroom"
                 elif title in ("Lunch", "Reception"):
-                    venue = "1F Puyue All-Day Restaurant"
+                    venue = "Puyue All-Day Restaurant"
                     if title == "Reception":
                         title = "Dinner"
+            elif date == "2026.11.3":
+                venue = venue.replace("Wenjin Hall", "Wen Jin Ballroom")
+                if title == "Coffee Break":
+                    venue = "Wen Jin Ballroom"
+                elif title == "Lunch":
+                    venue = "Puyue All-Day Restaurant"
+                elif title == "Conference Dinner and Performance":
+                    venue = "Wen Jin Ballroom"
+            elif date == "2026.11.4":
+                venue = venue.replace("Wenjin Hall", "Wen Jin Ballroom")
+                if title == "Coffee Break":
+                    venue = "Wen Jin Ballroom"
+                elif title == "Lunch":
+                    venue = "Puyue All-Day Restaurant"
             speaker = chair(row.get("F", ""))
             extra = f'<span class="schedule-chair">Chair: {escape(speaker)}</span>' if speaker else ""
             if title == "Conference Opening":
@@ -140,6 +155,7 @@ def overview(rows):
 def details(rows):
     parts = []
     open_day = open_session = False
+    current_day = "Monday"
     i = 4
     while i < len(rows):
         value = rows[i].get("A", "").strip()
@@ -147,6 +163,7 @@ def details(rows):
             i += 1
             continue
         if re.match(r"^(Monday|Tuesday|Wednesday) \d", value):
+            current_day = value.split()[0]
             if open_session:
                 parts.append('</ul></section>')
                 open_session = False
@@ -160,13 +177,20 @@ def details(rows):
             if open_session:
                 parts.append('</ul></section>')
             parts.append('<section class="paper-session">')
-            parts.append(f'<p class="paper-session-meta">{escape(value.replace(chr(160), " "))}</p>')
+            session_meta = value.replace(chr(160), " ")
+            if current_day in ("Monday", "Tuesday", "Wednesday"):
+                session_meta = session_meta.replace("Wenjin Hall", "Wen Jin Ballroom")
+            parts.append(f'<p class="paper-session-meta">{escape(session_meta)}</p>')
             open_session = True
             i += 1
             parts.append(f'<h4>{escape(rows[i].get("A", ""))}</h4><ul>')
             i += 1
             continue
         if open_session and i + 1 < len(rows):
+            # The Art Chair withdrew this paper; the source workbook still lists it.
+            if value.startswith("From Alignment to Erasure: The Making and Meaning of IKHNOS"):
+                i += 2
+                continue
             match = re.search(r"\s*\((full|short|poster)\)$", value)
             kind = match.group(1) if match else ""
             title = value[:match.start()].strip() if match else value
