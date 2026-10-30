@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Awards - VINCI 2026</title>
+    <meta name="keywords" content="VINCI 2026, paper awards, best paper, honorable mention, award committee">
+    <meta name="description" content="VINCI 2026 paper awards for the Technical Paper Track, Art Paper Track, and Cultural Computing Special Track.">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+    <link rel="manifest" href="assets/manifest.json">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .awards-content { max-width: 1100px; padding: 2rem 1rem 3rem; }
+        .awards-content h1 { font-size: 2rem; font-weight: 700; border-bottom: 2px solid #00008b; padding-bottom: 1rem; }
+        .awards-content h1, .awards-content h2, .awards-content h3 { text-transform: none !important; }
+        .awards-nav { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 2rem; }
+        .awards-nav a { border: 1px solid #beced0; padding: .45rem .8rem; color: #1e555a; text-decoration: none; }
+        .awards-nav a:hover, .awards-nav a:focus { background: #e8f1f2; }
+        .awards-nav a:focus-visible { outline: 2px solid #1e555a; outline-offset: 2px; }
+        .awards-track { margin: 2rem 0 3rem; scroll-margin-top: 1rem; }
+        .awards-track > h2 { font-size: 1.5rem; color: #1e555a; border-bottom: 1px solid #bbcdd0; padding-bottom: .5rem; margin-bottom: 1rem; }
+        .awards-track h3 { font-size: 1.1rem; font-weight: 700; margin: 1.25rem 0 .5rem; }
+        .award-papers, .award-members { padding-left: 1.2rem; margin-bottom: 1rem; }
+        .award-papers li, .award-members li { padding: .35rem 0; overflow-wrap: anywhere; }
+        .award-papers strong { line-height: 1.45; }
+        .award-authors, .award-members span { display: block; color: #596368; font-size: .9rem; hyphens: none; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container-fluid" style="background-color: black; padding: 10px 0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <a href="index.html"><img src="img/logo.png" alt="VINCI" style="height: 40px; width: auto;"></a>
+                </div>
+                <div class="col">
+                    <ul class="nav navbar justify-content-end">
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="index.html">Overview</a></li>
+                        <li class="nav-item d-none d-xl-block dropdown custom-hover-dropdown">
+                            <a class="nav-link custom-nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Submissions</a>
+                            <ul class="dropdown-menu custom-dark-menu">
+                                <li><a class="dropdown-item" href="submissions.html">General Information</a></li>
+                                <li><a class="dropdown-item" href="technical.html">Technical Papers</a></li>
+                                <li><a class="dropdown-item" href="art.html">Art Paper, Art Gallery &amp; Media Gallery Tracks</a></li>
+                                <li><a class="dropdown-item" href="cultural.html">Cultural Computing Special Track</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="keynotes.html">Keynotes</a></li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="schedule.html">Schedule</a></li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link active-page" href="awards.html" aria-current="page">Awards</a></li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="panel-discussion.html">Panel Discussion</a></li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="exhibit.html">Exhibit</a></li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="registration.html">Registration</a></li>
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link custom-nav-link" href="committees.html">Committees</a></li>
+                        <li class="nav-item d-none d-xl-block dropdown custom-hover-dropdown">
+                            <a class="nav-link custom-nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Venue</a>
+                            <ul class="dropdown-menu dropdown-menu-end custom-dark-menu">
+                                <li><a class="dropdown-item" href="ooeli.html">OōEli (Art and Media Gallery Track)</a></li>
+                                <li><a class="dropdown-item" href="conference-venue.html">Conference Venue &amp; Accommodation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown d-xl-none navbar-dark">
+                            <a class="nav-link dropdown-toggle custom-nav-link" data-bs-toggle="dropdown" href="#" role="button"><span class="navbar-toggler-icon me-2"></span> Navigation</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="index.html">Overview</a></li>
+                                <li><span class="dropdown-item mobile-nav-section">Submissions</span></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="submissions.html">General Information</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="technical.html">Technical Papers</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="art.html">Art Paper, Art Gallery &amp; Media Gallery Tracks</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="cultural.html">Cultural Computing Special Track</a></li>
+                                <li><a class="dropdown-item" href="keynotes.html">Keynotes</a></li>
+                                <li><a class="dropdown-item" href="schedule.html">Schedule</a></li>
+                                <li><a class="dropdown-item active-page" href="awards.html" aria-current="page">Awards</a></li>
+                                <li><a class="dropdown-item" href="panel-discussion.html">Panel Discussion</a></li>
+                                <li><a class="dropdown-item" href="exhibit.html">Exhibit</a></li>
+                                <li><a class="dropdown-item" href="registration.html">Registration</a></li>
+                                <li><a class="dropdown-item" href="committees.html">Committees</a></li>
+                                <li><span class="dropdown-item mobile-nav-section">Venue</span></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="ooeli.html">OōEli (Art and Media Gallery Track)</a></li>
+                                <li><a class="dropdown-item mobile-nav-child" href="conference-venue.html">Conference Venue &amp; Accommodation</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="header">
+        <div class="row justify-content-center mt-4">
+            <div class="col-custom" style="text-align: center;">
+                <img src="img/VINCI.jpg" style="width: 100%; max-width: 1000px; height: auto; border-radius: 8px; margin-bottom: 20px;" alt="VINCI 2026">
+            </div>
+        </div>
+    </section>
+    <section class="container d-block d-sm-none">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-sm mt-3">
+                <p><strong><a class="text-body" href="index.html">The 19<sup>th</sup> International Symposium on Visual Information Communication and Interaction (VINCI 2026)</a></strong></p>
+                <p class="text-end">Hangzhou, China, 1-4 November 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="container awards-content" id="main-content">
+        <h1>VINCI 2026 Paper Awards</h1>
+        <nav class="awards-nav" aria-label="Award tracks">
+            <a href="#technical">Technical Paper Track</a>
+            <a href="#art-paper">Art Paper Track</a>
+            <a href="#cultural-computing">Cultural Computing Special Track</a>
+        </nav>
+
+        <!-- Paper titles and author order follow schedule.html; surname-first names and punctuation are formatted for display. -->
+        <section class="awards-track" id="technical" aria-labelledby="technical-title">
+            <h2 id="technical-title">Technical Paper Track</h2>
+            <h3>Best Paper</h3>
+            <ul class="award-papers">
+                <li><strong>VideoMaster: Directing Data Videos with Cinematic Narrative</strong><span class="award-authors">Yile Luo; Yupeng Xie; Weikai Yang</span></li>
+            </ul>
+            <h3>Honorable Mention</h3>
+            <ul class="award-papers">
+                <li><strong>Formation DancAR: Facilitating Formation Dance Practice with Augmented Reality</strong><span class="award-authors">Samuel Beck; Nina Doerr; Michael Sedlmair; Wolfgang Stuerzlinger; Steffen Koch</span></li>
+                <li><strong>Visualization of Machine Learning Models through Their Spatial and Temporal Listeners</strong><span class="award-authors">Siyu Wu; Lei Shi; Lei Xia; Cenyang Wu; Zipeng Liu; Yingchaojie Feng; Liang Zhou; Wei Chen</span></li>
+            </ul>
+            <h3>Award Committee</h3>
+            <ul class="award-members">
+                <li><strong>Stephan Diehl</strong><span>University of Trier</span></li>
+                <li><strong>Takayuki Itoh</strong><span>Ochanomizu University</span></li>
+            </ul>
+        </section>
+
+        <section class="awards-track" id="art-paper" aria-labelledby="art-paper-title">
+            <h2 id="art-paper-title">Art Paper Track</h2>
+            <h3>Best Paper</h3>
+            <ul class="award-papers">
+                <li><strong>Negative Shanshui: Staging Environmental Reflection through AI-Generated Ruptured Landscapes in the Anthropocene</strong><span class="award-authors">Aven-Le Zhou</span></li>
+            </ul>
+            <h3>Honorable Mention</h3>
+            <ul class="award-papers">
+                <li><strong>Practical Application of a Spatial Reality Display for 3D Digital Archives — A Case Study in a Football Museum</strong><span class="award-authors">Takahito Murakami; Maya Torii; Jingjing Li; Yoichi Ochiai</span></li>
+                <li><strong>Riding the Clock: Designing an Interactive Installation with a Sound-Based Narrative to Facilitate Empathy for Food Delivery Riders’ Everyday Challenges</strong><span class="award-authors">Heyue Li; Yufei Hu; Lisha Zhu; Wanlin Zhang</span></li>
+            </ul>
+            <h3>Award Committee</h3>
+            <ul class="award-members">
+                <li><strong>Yang Shi</strong><span>Tongji University</span></li>
+                <li><strong>Juanjuan Long</strong><span>Southeast University</span></li>
+                <li><strong>Muchun Wan</strong><span>China Academy of Art</span></li>
+            </ul>
+        </section>
+
+        <section class="awards-track" id="cultural-computing" aria-labelledby="cultural-computing-title">
+            <h2 id="cultural-computing-title">Cultural Computing Special Track</h2>
+            <h3>Best Paper</h3>
+            <ul class="award-papers">
+                <li><strong>JDVis: An Evidence-Traceable Framework for the Visual Translation of Jiandu Transcriptions</strong><span class="award-authors">Ziduo Ye; Jiahao Xu; Jinjuan Li; Zhan Zhang</span></li>
+            </ul>
+            <h3>Honorable Mention</h3>
+            <ul class="award-papers">
+                <li><strong>ColorFilteringAR: Designing an Interactive Installation to Address Accessibility Challenges Faced by Non-Native Speakers in Urban Mobility</strong><span class="award-authors">Khaliun Ganbat; HaoKun Fu; Yeqing Wu; Lisha Zhu; Wanlin Zhang</span></li>
+                <li><strong>Ink Rhythm: Mutual Metaphorization of Calligraphy and Dance for Embodied Immersive Cultural Experience</strong><span class="award-authors">Ning Tang; Ting Xu; Kang Zhang; David Kei-man Yip; Zeyu Wang</span></li>
+            </ul>
+            <h3>Award Committee</h3>
+            <ul class="award-members">
+                <li><strong>Xia Zheng</strong><span>Zhejiang University</span></li>
+                <li><strong>Junsong Zhang</strong><span>Xiamen University</span></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="text-center">
+        <img src="img/尾标.png" alt="Copyright 2026 VINCI" style="max-height: 20px; width: auto; margin: 10px 0;">
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
